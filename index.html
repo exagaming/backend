@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="https://cdn.socket.io/4.5.0/socket.io.min.js">
+
+  </script>
+
+
+</head>
+
+<body>
+  <script>
+    const SOCKET_NAMESPACES = {
+      DEMO: '/demo',
+      WALLET: '/wallet',
+      CRASH_GAME: '/crash-game',
+      ENGINE3_GAME: '/engine3-game'
+    }
+
+    const SOCKET_LISTENERS = {
+      WALLET_USER_WALLET_BALANCE: SOCKET_NAMESPACES.WALLET + '/userWalletBalance',
+      CRASH_GAME_ROUND_STARTED: SOCKET_NAMESPACES.CRASH_GAME + '/roundStarted',
+      CRASH_GAME_ROUND_STOPPED: SOCKET_NAMESPACES.CRASH_GAME + '/roundStopped',
+      CRASH_GAME_WAITING_TIMER: SOCKET_NAMESPACES.CRASH_GAME + '/waitingTimer',
+      CRASH_GAME_GRAPH_TIMER: SOCKET_NAMESPACES.CRASH_GAME + '/graphTimer',
+      CRASH_GAME_ROUND_BETTING_ON_HOLD: SOCKET_NAMESPACES.CRASH_GAME + '/roundBettingOnHold',
+      CRASH_GAME_BETS_INFO: SOCKET_NAMESPACES.CRASH_GAME + '/betsInfo',
+      JACKPOT_INFO: SOCKET_NAMESPACES.ENGINE3_GAME + '/jackpotInfo',
+      JACKPOT_WIN_INFO: SOCKET_NAMESPACES.ENGINE3_GAME + '/jackpotWinInfo'
+
+    }
+    try{
+
+      a = io('ws://localhost:8004/internal-crash-game', {
+        transports: ['websocket'],
+        auth: {
+          basicToken: 'Basic dXNlcm5hbWU6cGFzc3dvcmQ='
+        }
+      })
+
+      b = io('ws://localhost:8004/crash-game', {
+        transport: ['websocket']
+      })
+
+      const demoSocket = io('ws://localhost:8004/demo', {
+        transports: ['polling', 'websocket'],
+        extraHeaders: {
+          "accept-language": "fr-FR" // WARN: this will be ignored in a browser
+        }
+      })
+      const connectionUrl = 'localhost:8004'
+      const jwtToken = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.ey'
+
+      c = io(`ws://${connectionUrl}/engine3-game`, {
+        transports: [ 'websocket'],
+        query: {
+          operatorId: 1,
+          gameId: 42
+        },
+        auth: {
+          authorization: `Bearer ${jwtToken}`
+        }
+      })
+
+      b.on(SOCKET_LISTENERS.CRASH_GAME_ROUND_STARTED, (data) => console.log(SOCKET_LISTENERS.CRASH_GAME_ROUND_STARTED, data))
+      b.on(SOCKET_LISTENERS.CRASH_GAME_ROUND_STOPPED, (data) => console.log(SOCKET_LISTENERS.CRASH_GAME_ROUND_STOPPED, data))
+      b.on(SOCKET_LISTENERS.CRASH_GAME_WAITING_TIMER, (data) => console.log(SOCKET_LISTENERS.CRASH_GAME_WAITING_TIMER, data))
+      b.on(SOCKET_LISTENERS.CRASH_GAME_GRAPH_TIMER, (data) => console.log(SOCKET_LISTENERS.CRASH_GAME_GRAPH_TIMER, data))
+      b.on(SOCKET_LISTENERS.CRASH_GAME_ROUND_BETTING_ON_HOLD, (data) => console.log(SOCKET_LISTENERS.CRASH_GAME_ROUND_BETTING_ON_HOLD, data))
+      b.on(SOCKET_LISTENERS.CRASH_GAME_BETS_INFO, (data) => console.log(SOCKET_LISTENERS.CRASH_GAME_BETS_INFO, data))
+
+
+      // increment event
+      c.on(SOCKET_LISTENERS.JACKPOT_INFO, (data)=> console.log(SOCKET_LISTENERS.JACKPOT_INFO, data))
+      c.on('connect_error', (err) => console.error('Error on socket c:', err));
+      // jackpot restart event
+      c.on(SOCKET_LISTENERS.JACKPOT_WIN_INFO, (data)=> console.log(SOCKET_LISTENERS.JACKPOT_WIN_INFO, data))
+      c.on('connect_error', (err) => console.error('Error on socket c:', err));
+      // Error handling
+      c.on('connect_error', (error) => {
+        console.error('Connection error:', error);
+      });
+
+      c.on('error', (error) => {
+        console.error('Socket error:', error);
+      });
+
+      c.on('disconnect', (reason) => {
+        console.log('Disconnected:', reason);
+      });
+
+  } catch (error) {
+      console.error('Socket initialization error:', error);
+  }
+  </script>
+</body>
+
+</html>

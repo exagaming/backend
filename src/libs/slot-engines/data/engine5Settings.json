@@ -1,0 +1,313 @@
+{
+  "line": 10,
+  "rows":3,
+  "reels":5,
+  "payDirection": {
+    "leftToRight":1,
+    "rightToLeft":2
+  },
+  "symbols": [
+    "HP1",
+    "HP2",
+    "HP3",
+    "HP4",
+    "LP1",
+    "LP2",
+    "LP3",
+    "LP4",
+    "LP5",
+    "FS",
+    "MO",
+    "FG",
+    "WD"
+  ],
+  "symbolKeys": {
+    "HP1": "HP1",
+    "HP2": "HP2",
+    "HP3": "HP3",
+    "HP4": "HP4",
+    "LP1": "LP1",
+    "LP2": "LP2",
+    "LP3": "LP3",
+    "LP4": "LP4",
+    "LP5": "LP5",
+    "FS": "FS",
+    "MO": "MO",
+    "FG": "FG",
+    "WD": "WD"
+  },
+  "symbolIdMap": {
+    "HP1": 201,
+    "HP2": 202,
+    "HP3": 203,
+    "HP4": 204,
+    "LP1": 101,
+    "LP2": 102,
+    "LP3": 103,
+    "LP4": 104,
+    "LP5": 105,
+    "FS": 301,
+    "MO": 302,
+    "FG": 25,
+    "WD": 80
+  },
+  "valueSymbols": [
+    "HP1",
+    "HP2",
+    "HP3",
+    "HP4",
+    "LP1",
+    "LP2",
+    "LP3",
+    "LP4",
+    "LP5"
+  ],
+  "symbolMultiplier": {
+    "HP4": {
+      "2": 0.5,"3": 5, "4": 20, "5": 200
+    },
+    "HP3": {
+      "2": 0,"3": 3, "4": 15, "5": 100
+    },
+    "HP2": {
+      "2": 0,"3": 2, "4": 10, "5": 50
+    },
+    "HP1": {
+      "2": 0,"3": 2, "4": 10, "5": 50
+    },
+    "LP5": {
+      "2": 0,"3": 0.2, "4": 2.5, "5": 10
+    },
+    "LP4": {
+      "2": 0,"3": 0.2, "4": 2.5, "5": 10
+    },
+    "LP3": {
+      "2": 0,"3": 0.2, "4": 1, "5": 5
+    },
+    "LP2": {
+      "2": 0,"3": 0.2, "4": 1, "5": 5
+    },
+    "LP1": {
+      "2": 0,"3": 0.2, "4": 1, "5": 5
+    },
+    "FS": {
+      "2": 0,"3": 1, "4": 5, "5": 20
+    }
+  },
+  "patterns": {
+    "1" : [5, 6, 7, 8, 9],
+    "2" : [0,1,2,3,4],
+    "3" : [10 ,11, 12, 13, 14],
+    "4" : [0, 6, 12, 8, 4],
+    "5" : [10, 6, 2, 8, 14],
+    "6" : [5, 11, 12, 13, 9],
+    "7" : [5, 1, 2, 3, 9],
+    "8" : [10, 11, 7, 3, 4],
+    "9" : [0, 1, 7, 13, 14],
+    "10" : [10, 6, 7, 8, 4]
+  },
+  "glossaryTerms": {
+    "YES": "YES"
+  },
+  "moneySymbolMultiplierWeightTable": {
+    "1":70000,
+    "2":15000,
+    "3":5000,
+    "4":2000,
+    "5":200,
+    "6":100,
+    "7":100,
+    "8":100,
+    "9":80,
+    "10":80,
+    "11":5,
+    "12":5,
+    "14":5,
+    "16":2,
+    "18":2,
+    "20":2,
+    "22":1,
+    "25":1,
+    "30":1,
+    "50":1,
+    "100":1,
+    "200":1
+  },
+  "buyHoldAndSpinnerMoneySymbolMultiplierWeightTable": {
+    "1":1200,
+    "2":1200,
+    "3":1000,
+    "4":1000,
+    "5":1000,
+    "6":1000,
+    "7":800,
+    "8":800,
+    "9":700,
+    "10":700,
+    "11":700,
+    "12":500,
+    "14":500,
+    "16":2,
+    "18":2,
+    "20":2,
+    "22":1,
+    "25":1,
+    "30":1,
+    "50":1,
+    "100":1,
+    "200":1
+  },
+  "fishSymbolMultiplierWeightTable": {
+    "2": 40000,
+    "5": 25000,
+    "10": 10000,
+    "20": 10000,
+    "25": 8000,
+    "30": 1000,
+    "50": 80,
+    "100": 50,
+    "200": 5,
+    "500": 2,
+    "1000": 1,
+    "3333": 1,
+    "5000": 1,
+    "10000": 1
+  },
+  "freeSpinsAwarded": {
+    "3": 10,
+    "4": 15,
+    "5": 20
+  },
+  "defaultSpinsInHoldAndSpinner": 4,
+  "freeGameReelSetWeightTable": {
+    "FG1": 10,
+    "FG2": 0.5
+  },
+  "buyFreeGameReelSetWeightTable": {
+    "FG1": 20,
+    "FG2": 1.2
+  },
+  "wildCollectedMultipliers": {
+    "4": 2,
+    "8": 3,
+    "12": 10
+  },
+  "bazookaPayWindowSymbolWeightTable": {
+    "FS": 8,
+    "HP1": 5,
+    "HP2": 5,
+    "HP3": 5,
+    "HP4": 5,
+    "LP1": 5,
+    "LP2": 5,
+    "LP3": 5,
+    "LP4": 5,
+    "LP5": 5
+  },
+  "hookTriggerDecisionWeightTable": {
+    "YES": 1,
+    "NO": 100
+  },
+  "hookTriggerOldReelSelectionWeightTable": {
+    "103,201,105": 1,
+    "105,202,104": 1,
+    "102,201,104": 1
+  },
+  "buyHoldAndSpinnerPayWindowSelection": {
+    "weightTable": {
+      "1": 10,
+      "2": 5,
+      "3": 1
+    },
+    "payWindows": [
+      [
+        ["MO", "LP3", "LP1"],
+        ["FS", "LP4", "LP2"],
+        ["LP4", "LP3", "LP5"],
+        ["HP4", "HP3", "MO"],
+        ["MO", "LP2", "HP2"]
+      ],
+      [
+        ["MO", "LP3", "LP1"],
+        ["FS", "LP4", "LP2"],
+        ["LP4", "MO", "LP5"],
+        ["HP4", "HP3", "MO"],
+        ["MO", "LP2", "HP2"]
+      ],
+      [
+        ["MO", "LP3", "LP1"],
+        ["FS", "LP4", "MO"],
+        ["LP4", "MO", "LP5"],
+        ["HP4", "HP3", "MO"],
+        ["MO", "LP2", "HP2"]
+      ]
+    ]
+  },
+  "buyFreeSpinPayWindowSelection": {
+    "weightTable": {
+      "1": 200,
+      "2": 5,
+      "3": 1
+    },
+    "payWindows": [
+      [
+        ["HP3", "FG", "LP3"],
+        ["LP2", "LP4", "FS"],
+        ["LP1", "LP5", "FG"],
+        ["FG", "LP1", "HP3"],
+        ["LP5", "LP3", "HP2"]
+      ],
+      [
+        ["HP3", "FG", "LP3"],
+        ["LP2", "FG", "FS"],
+        ["LP1", "LP5", "FG"],
+        ["FG", "LP1", "HP3"],
+        ["LP5", "LP3", "HP2"]
+      ],
+      [
+        ["HP3", "FG", "LP3"],
+        ["LP2", "FG", "FS"],
+        ["LP1", "LP5", "FG"],
+        ["FG", "LP1", "HP3"],
+        ["LP5", "FG", "HP2"]
+      ]
+    ]
+  },
+  "reelSets": {
+    "BG": [
+      ["LP4","FS","HP4","LP4","LP5","LP2","LP5","LP2","HP4","LP5","LP4","MO","HP4","HP2","LP5","HP1","FS","LP4","LP2","HP3","FS","LP2","HP2","LP5","FS","LP2","HP4","HP2","LP2","LP4","MO","LP1","LP5","LP2","FS","FS","FS","LP3","HP2","LP4","HP3","LP1","LP3","LP5","LP2","LP4","LP5","HP3","HP2","LP2","LP4","LP5","HP1","LP1","HP4","LP3","LP5","MO","LP3","LP1","HP3","FG","LP3","LP4","LP1","LP3","HP2","LP4","MO","LP5","HP1","LP3","LP1","HP1","LP2","LP3","LP5","FG","LP1","HP1","LP4","LP2","HP3","FS","LP2","HP2","LP3","LP2","LP1","HP4","LP2","FS","LP4","LP3","LP1","LP5","MO","HP1","LP2","LP3","LP1","HP3","LP5","LP3","LP1","HP2","LP4","HP3","LP3","LP1","LP2","LP3","LP1","FG"],
+      ["MO","FS","LP5","HP3","LP2","LP4","LP3","HP2","LP1","HP4","HP3","LP2","LP5","HP2","HP3","FS","FS","FS","LP3","LP2","LP1","FG","LP5","LP4","LP4","FS","LP4","HP3","LP3","FS","LP4","LP2","HP1","HP2","HP4","LP2","LP1","LP4","FG","LP2","LP4","FS","LP5","LP3","LP2","HP4","MO","LP3","LP2","LP1","HP2","HP1","LP3","FS","LP1","LP4","LP3","LP2","LP1","LP3","HP2","LP5","LP1","LP2","LP3","FS","LP1","HP3","LP2","LP5","HP4","FS","LP4","LP2","HP2","LP1","LP5","MO","LP1","LP4","LP3","LP5","LP2","HP1","HP2","LP1","LP3","FG","LP1","HP1","HP3","LP3","LP5","LP4","LP2","HP1","HP2","HP4","LP3","LP1","HP1","LP2","LP1","HP1","HP3","LP5","LP3","LP4","HP4","MO","HP1","LP3","HP2","HP1"],
+      ["HP2","LP3","LP4","FS","LP3","MO","LP2","LP3","LP2","HP2","LP4","LP2","FS","HP3","LP1","LP5","FS","HP4","LP5","HP3","MO","FS","LP5","LP2","HP3","LP1","FS","LP5","MO","HP2","LP1","HP4","LP5","LP3","LP1","FS","HP1","LP4","HP4","LP2","FS","LP3","LP1","LP2","LP5","HP1","LP3","LP1","LP2","HP4","LP4","LP1","HP2","HP1","FG","LP1","LP4","HP3","LP5","LP1","FS","FS","FS","LP3","LP1","LP4","HP1","LP2","LP3","MO","LP1","HP2","LP2","LP4","LP3","LP5","LP1","HP4","FG","HP1","LP4","LP1","LP5","FG","LP4","LP2","LP3","LP5","LP1","HP2","LP2","LP1","LP3","LP2","MO","LP4","LP2","LP3","LP4","HP3","LP2","HP4","LP3","LP1","HP1","LP2","LP5","HP1","LP2","LP3","LP4","LP1","LP5","HP3"],
+      ["HP1","MO","LP5","HP1","LP1","HP3","LP1","LP3","LP5","FS","LP2","HP1","LP4","LP1","FS","LP2","HP3","LP3","LP2","LP4","LP1","LP3","HP1","LP2","LP3","FS","LP2","HP2","HP3","LP4","HP1","HP2","FS","LP3","LP1","HP4","HP3","MO","LP4","MO","HP4","FS","LP2","LP1","HP2","MO","LP3","HP4","LP4","LP1","LP5","FG","LP4","LP1","LP2","LP5","LP4","LP1","FG","LP3","HP4","LP5","LP1","LP3","HP1","LP1","LP2","MO","HP1","LP4","LP1","LP3","HP2","LP2","LP5","FG","HP4","LP5","LP2","LP3","LP1","LP4","LP3","LP2","LP1","HP2","LP2","LP1","LP4","LP5","LP3","LP2","HP2","LP5","LP3","FG","LP1","HP3","HP2","LP1","FS","FS","FS","HP1","LP2","HP2","LP3","HP4","LP4","HP1","LP1","LP4","LP2","HP3"],
+      ["HP1","LP2","HP4","LP5","LP3","HP3","LP3","LP3","LP2","HP1","LP5","LP1","MO","HP2","LP3","FS","MO","LP2","HP2","FG","LP1","LP3","HP1","LP4","LP1","HP3","LP5","LP4","HP2","FS","FS","FS","HP2","LP3","LP1","HP3","FG","LP1","HP2","LP4","HP1","LP1","LP4","LP3","HP2","FS","HP4","LP4","LP2","HP1","LP1","LP4","LP3","LP5","HP3","HP1","LP1","LP2","HP1","HP4","FG","LP5","LP2","LP3","HP3","LP2","HP1","FS","LP1","MO","LP2","HP2","LP5","LP2","HP4","MO","LP2","LP1","LP4","HP1","FS","LP4","LP2","HP3","LP5","LP3","HP2","LP1","LP3","FS","HP2","LP5","LP3","LP1","HP3","MO","LP1","HP2","LP4","HP1","LP1","LP4","LP3","FS","FS","HP4","HP2","LP4","HP1","LP1","LP4","LP3","LP5","HP3"]
+    ],
+    "BGHR": [
+      ["HP4","HP1","LP2","LP4","LP3","LP5","HP1","LP2","LP1","LP1","HP3","MO","HP2","LP4","LP2","LP1","LP2","LP2","LP2","LP4","LP3","LP5","HP1","LP2","LP1","LP1","HP3","LP5","MO","LP4","LP2","LP1","LP2","LP5","LP2","LP4","LP1","HP3","LP3","LP1","HP2","LP4","LP3","LP5","HP1","LP1","LP1","LP3","LP2","LP3","LP5","LP5","LP1","HP1","LP4","LP2","HP3","LP3","LP2","HP2","HP1","HP1","LP2","HP4","HP2","LP2","LP4","LP3","MO","LP5","LP4","HP1","LP2","LP3","LP1","HP3","LP5","LP3","LP1","LP2","LP4","HP3","LP3","LP1","LP2","LP3","LP1","LP2","LP4","LP1","HP4","LP4","LP1","LP5","HP4","LP2","LP4","LP5","HP4","HP2","LP2","HP1","MO","HP1","LP2","HP3","LP3","LP2","HP2","HP1","LP2","LP2","HP4","LP2","LP2","LP4","LP3","LP5","HP1","LP2","LP1","LP1","HP3","MO","HP2","LP4","LP2","LP1","LP2","LP5","LP2","LP4","LP1","HP3","HP2","LP2","LP4","LP5","HP1","LP1","HP4","LP1","LP3","LP5","LP3","LP1","HP3","LP1","LP3","LP4","LP3","LP1","HP2","LP4","LP3","LP5","HP1","LP1","LP1","LP3","LP2","LP3","LP5","LP5","LP1","HP1","LP4","LP2","HP3","LP3","LP2","HP2","HP1","HP1","LP2","HP4","HP2","LP2","LP4","LP3","MO","LP5","LP4","HP1","LP2","LP3","LP1","HP3","LP5","LP3","LP1","LP2","LP4","HP3","LP3","LP1","LP2","LP3","LP1","LP2"],
+      ["LP2","HP3","LP3","LP5","LP1","LP2","HP1","HP2","HP4","LP3","LP1","LP4","LP4","MO","LP4","HP3","LP5","HP3","LP3","LP5","LP1","LP2","HP1","HP2","HP4","LP3","LP1","LP4","LP4","LP5","LP4","HP3","MO","LP3","LP1","HP4","LP5","LP3","LP3","LP5","LP1","HP3","LP2","LP5","HP4","HP1","LP2","LP2","HP2","LP1","LP5","LP5","LP1","LP4","LP3","LP3","LP2","HP1","HP2","LP1","LP5","MO","LP1","HP1","HP3","LP3","LP5","LP4","LP2","HP1","HP2","HP4","HP1","LP1","HP1","LP2","LP1","HP1","HP3","LP5","LP3","LP4","HP4","LP2","HP1","HP1","HP2","LP3","HP1","LP2","LP5","HP3","LP2","HP1","LP1","HP4","HP3","LP2","LP5","HP2","HP3","LP1","LP2","LP4","LP2","HP2","LP1","LP5","LP5","LP4","LP4","LP1","LP2","HP3","LP3","LP5","LP1","LP2","HP1","HP2","HP4","LP3","LP1","LP4","LP4","MO","LP4","HP3","LP5","LP3","LP1","HP4","LP5","LP3","LP2","LP1","HP2","HP1","LP1","LP5","LP1","LP4","LP3","LP2","LP3","LP2","HP2","HP2","LP1","LP3","LP3","LP5","LP1","HP3","LP2","LP5","HP4","HP1","LP2","LP2","HP2","LP1","LP5","LP5","LP1","LP4","LP3","LP3","LP2","HP1","HP2","LP1","LP5","MO","LP1","HP1","HP3","LP3","LP5","LP4","LP2","HP1","HP2","HP4","HP1","LP1","HP1","LP2","LP1","HP1","HP3","LP5","LP3","LP4","HP4","LP2","HP1","HP1","HP2","LP3"],
+      ["LP3","HP1","LP1","HP1","LP1","HP4","LP4","LP3","LP2","MO","HP1","HP2","HP4","LP2","LP4","LP3","LP1","LP2","LP1","HP1","LP1","HP4","LP4","LP3","LP2","LP5","HP1","HP2","HP4","MO","LP4","LP3","LP1","LP2","LP5","LP2","LP3","HP3","LP1","LP4","HP1","LP2","LP3","LP5","LP1","HP2","LP2","LP4","HP3","LP5","LP3","HP4","LP3","HP1","LP4","LP2","LP5","MO","LP4","LP2","LP3","LP5","LP1","HP2","LP1","LP1","LP2","LP3","HP2","LP4","LP2","LP5","LP4","LP3","LP2","HP4","LP3","LP1","HP1","HP1","HP1","LP5","LP2","LP3","HP3","LP1","LP4","LP3","LP2","LP3","LP4","HP1","LP3","MO","LP2","HP2","LP2","LP4","LP4","HP3","HP3","LP5","LP2","HP4","LP1","HP3","LP1","LP5","LP1","LP2","LP1","HP1","LP3","LP2","LP1","HP1","LP1","HP4","LP4","LP3","LP2","MO","HP1","HP2","HP4","LP2","LP4","LP3","LP1","LP2","LP5","LP2","LP3","HP3","HP1","LP2","LP4","LP1","HP2","HP1","LP5","LP1","LP4","LP2","LP2","LP1","HP4","LP2","LP5","LP3","LP1","LP4","HP1","LP2","LP3","LP5","LP1","HP2","LP2","LP4","HP3","LP5","LP3","HP4","LP3","HP1","LP4","LP2","LP5","MO","LP4","LP2","LP3","LP5","LP1","HP2","LP1","LP1","LP2","LP3","HP2","LP4","LP2","LP5","LP4","LP3","LP2","HP4","LP3","LP1","HP1","HP1","HP1","LP5","LP2","LP3","HP3","LP1","LP4","LP3"],
+      ["LP2","HP2","LP1","LP4","HP1","HP2","HP2","LP3","LP1","HP3","LP1","HP2","LP1","LP1","MO","LP4","LP2","HP2","LP1","LP4","HP1","HP2","HP2","LP3","LP1","HP3","LP1","HP2","LP1","LP1","LP5","LP4","MO","LP4","HP2","LP2","LP3","HP4","HP1","LP1","LP2","LP5","HP1","LP4","MO","LP2","HP2","LP2","LP5","LP2","HP4","LP5","LP2","LP1","LP3","HP1","LP3","LP2","LP1","LP2","HP2","LP1","LP2","LP5","LP3","LP2","HP2","LP5","LP3","MO","LP1","HP3","HP2","LP1","HP1","LP1","LP5","LP4","LP2","HP2","LP3","HP4","LP4","HP1","LP1","LP4","LP2","HP3","HP1","LP3","HP1","LP5","LP1","LP3","LP2","LP5","LP2","HP1","LP4","LP1","LP3","LP2","LP3","LP5","HP1","LP2","LP1","LP3","HP1","LP4","LP3","HP3","LP2","HP2","LP1","LP4","HP1","HP2","HP2","LP3","LP1","HP3","LP1","HP2","LP1","LP1","MO","LP4","LP2","LP4","HP2","LP2","LP3","HP4","LP4","LP1","LP4","LP5","LP5","HP3","LP2","LP5","LP4","LP1","LP2","LP3","LP2","LP5","LP1","LP3","HP1","LP1","LP2","LP5","HP1","LP4","LP1","LP2","HP2","LP2","LP5","LP2","HP4","LP5","LP2","LP1","LP3","HP1","LP3","LP2","LP1","LP2","HP2","LP1","LP2","LP5","LP3","LP2","HP2","LP5","LP3","MO","LP1","HP3","HP2","LP1","HP1","LP1","LP5","LP4","LP2","HP2","LP3","HP4","LP4","HP1","LP1","LP4","LP2","HP3"],
+      ["LP5","HP1","HP2","LP1","LP4","HP2","LP5","LP3","LP1","HP3","LP3","MO","HP2","LP4","HP1","LP1","LP4","LP2","HP2","LP1","LP4","HP2","LP5","LP3","LP1","HP3","LP3","LP5","HP2","MO","HP1","LP1","LP4","LP3","HP2","LP2","HP4","LP2","HP3","LP2","HP1","LP5","LP1","LP5","LP2","HP2","LP5","LP2","HP4","LP2","LP2","LP1","LP4","HP1","LP4","LP2","LP2","HP3","HP4","LP3","HP2","LP1","LP3","LP2","HP2","LP5","LP3","LP1","HP3","MO","LP1","HP2","LP4","HP1","LP1","LP4","LP3","HP1","HP2","LP2","HP4","LP4","HP1","LP1","LP4","LP3","LP5","HP3","HP1","LP2","HP4","LP5","HP1","HP3","LP2","HP1","LP5","LP1","MO","HP2","LP3","LP5","HP4","LP2","HP2","LP3","LP1","LP4","HP1","LP4","LP1","HP3","LP5","LP2","HP2","LP1","LP4","HP2","LP5","LP3","LP1","HP3","LP3","MO","HP2","LP4","HP1","LP1","LP4","LP3","HP2","LP2","HP4","LP2","LP2","HP1","LP1","LP4","LP3","LP5","HP3","HP1","LP1","HP1","LP2","HP4","LP5","LP5","LP3","LP2","HP3","LP2","HP1","LP5","LP1","LP5","LP2","HP2","LP5","LP2","HP4","LP2","LP2","LP1","LP4","HP1","LP4","LP2","LP2","HP3","HP4","LP3","HP2","LP1","LP3","LP2","HP2","LP5","LP3","LP1","HP3","MO","LP1","HP2","LP4","HP1","LP1","LP4","LP3","HP1","HP2","LP2","HP4","LP4","HP1","LP1","LP4","LP3","LP5","HP3"]
+    ],
+    "FG1": [
+      ["LP4","LP1","HP4","LP4","FS","FS","HP4","LP5","LP4","HP2","HP4","HP2","LP2","LP2","LP1","LP2","LP5","HP4","LP5","LP4","HP2","HP4","HP2","LP2","HP1","LP3","LP2","LP5","HP4","LP5","LP4","HP2","HP4","HP2","LP2","LP2","LP1","LP2","LP5","HP4","LP5","LP4","HP2","HP4","HP2","LP2","WD","LP1","LP2","LP5","LP1","HP2","HP1","LP3","LP2","LP5","HP2","LP3","LP4","LP5","LP4","HP1","LP2","LP1","FS","HP3","LP3","HP2","WD","LP2","LP1","LP5","LP2","LP3","LP4","LP1","HP3","FS","LP2","LP5","FS","FS","LP1","HP4","LP1","LP3","LP5","LP3","LP1","HP3","LP5","LP5","LP4","LP3","FS","HP2","LP4","LP3","FS","HP1","LP3","LP1","FS","LP5","LP3","LP2","FS","LP1","HP1","LP4","LP2","WD","LP3","LP2","HP2","LP5","LP2","LP5","HP4","FS","LP2","LP4","FS","FS","FS","LP1","HP1","LP2","FS","LP1","HP3","LP2","FS","LP1","HP3","FS","LP1","HP3","FS","FS","LP1","LP5","LP4","HP3","LP3","FS","LP2","LP3","LP5","LP5"],
+      ["LP5","LP2","FS","FS","FS","LP5","LP1","HP4","HP3","HP2","LP2","LP5","HP3","LP3","LP2","HP1","FS","LP1","HP4","HP3","HP2","LP4","WD","HP3","LP3","LP2","HP1","FS","LP1","HP4","HP3","HP2","LP2","LP5","HP3","LP3","LP2","HP1","FS","LP1","HP4","HP3","HP2","WD","LP5","HP3","LP3","LP2","HP1","FS","LP2","FS","LP4","LP4","LP1","HP2","HP3","LP3","FS","FS","LP2","HP1","HP2","HP4","HP2","LP1","LP4","FS","LP2","LP4","HP3","WD","LP5","LP1","HP4","FS","LP3","LP2","FS","HP2","HP1","LP3","FS","LP1","LP4","LP3","WD","LP3","LP2","HP2","FS","LP1","LP5","LP3","LP2","LP1","HP3","LP2","FS","HP4","HP1","LP4","LP5","HP2","LP1","LP2","FS","LP1","LP4","LP3","LP3","FS","HP1","HP2","LP1","LP4","LP5","LP5","HP1","HP3","LP3","FS","LP4","LP5","HP1","LP1","HP4","LP3","LP2","HP1","LP2","LP3","LP2","HP1","LP2","LP2","HP1","LP2","LP5","HP1","HP3","LP3","LP3","LP4","HP4","FS","HP1","HP1","FS","LP3"],
+      ["LP2","LP5","FS","HP1","LP3","FS","LP2","HP2","LP5","LP4","FS","HP3","HP3","LP2","HP2","HP4","LP1","LP2","HP2","LP5","LP4","FS","HP3","HP3","LP4","HP2","HP4","LP1","LP2","HP2","LP5","LP4","FS","HP3","HP3","LP2","HP2","HP4","LP1","LP2","HP2","LP5","LP4","FS","HP3","HP3","LP2","HP2","HP4","WD","LP1","LP3","LP2","LP1","HP1","HP3","FS","FS","LP3","LP1","LP5","HP1","LP5","LP5","LP4","LP5","LP4","HP4","LP1","FS","LP3","LP1","LP3","LP2","LP5","LP3","HP3","HP1","WD","LP4","LP1","HP2","HP1","FS","LP5","LP4","LP5","LP3","LP1","HP4","LP1","FS","LP3","LP1","FS","HP1","LP2","LP3","FS","LP5","HP2","FS","LP4","HP3","HP2","LP1","HP4","LP3","HP1","LP4","LP2","FS","FS","LP4","LP2","LP3","LP2","LP1","HP2","LP1","FS","LP2","LP3","LP1","LP4","LP2","FS","LP4","LP3","LP2","HP4","LP4","LP3","LP2","HP4","LP3","LP2","HP4","WD","LP1","HP1","LP2","FS","FS","FS","LP3","HP3","LP3","LP4","LP3"],
+      ["HP1","FS","HP1","LP1","LP4","LP3","LP2","LP2","LP3","HP1","LP4","LP5","LP5","LP2","LP3","LP1","WD","LP2","LP4","LP3","HP1","LP4","LP5","LP4","LP2","LP3","LP1","LP5","LP2","LP2","LP3","HP1","LP4","LP5","LP5","LP2","LP3","LP1","LP5","LP2","LP2","LP3","HP1","WD","LP5","LP5","LP2","LP3","LP1","LP5","LP3","HP2","LP4","LP5","LP3","LP2","HP2","LP1","LP4","HP1","FS","FS","LP3","LP1","HP3","LP1","HP2","LP5","WD","LP1","LP4","LP2","LP4","HP2","FS","LP3","HP4","LP4","LP5","LP4","FS","LP2","HP3","FS","FS","LP4","LP1","WD","LP3","HP4","FS","LP1","LP3","HP1","LP1","LP2","FS","HP1","LP4","LP5","LP3","HP2","LP2","HP2","LP1","HP4","LP2","LP3","LP1","LP3","LP4","FS","LP2","LP5","LP2","FS","LP1","LP4","FS","LP3","LP2","HP2","FS","FS","FS","LP1","HP3","HP2","FS","HP1","LP1","HP2","FS","HP1","LP1","FS","HP1","LP1","FS","LP4","LP2","HP2","LP3","HP4","LP4","FS","LP5","LP4","LP2","HP3"],
+      ["HP1","LP2","HP4","FS","LP3","HP3","LP2","HP1","FS","LP1","LP5","LP1","LP3","LP2","FS","LP2","LP5","LP2","HP1","FS","LP1","LP5","LP1","LP3","LP2","FS","LP2","LP5","LP2","HP1","FS","LP1","LP5","LP4","LP3","LP2","FS","LP2","LP5","LP2","HP1","FS","LP1","LP5","WD","LP3","LP2","FS","LP2","LP5","LP5","LP1","LP4","LP2","HP3","FS","LP3","HP2","LP2","LP1","HP2","FS","FS","LP1","HP3","LP3","LP1","HP2","LP4","HP1","LP5","FS","LP3","LP3","LP2","HP4","LP4","FS","HP1","LP1","LP4","FS","FS","HP3","HP1","LP1","LP3","LP2","HP4","FS","LP2","LP3","LP3","HP3","LP2","HP1","FS","LP1","LP2","WD","HP2","LP4","LP2","LP4","LP2","HP2","FS","LP4","HP1","LP4","LP5","LP3","HP3","HP2","LP3","HP2","LP1","LP3","LP5","HP2","FS","LP3","LP1","HP3","FS","LP1","HP2","LP4","HP3","LP5","LP4","LP4","HP3","LP5","LP4","HP3","LP5","LP4","LP3","LP5","HP2","LP5","HP4","LP4","WD","LP1","LP4","FS","FS","FS"]
+    ],
+    "FG2": [
+      ["LP4","LP1","HP4","LP4","FS","FS","HP4","LP5","LP4","HP2","HP4","HP2","LP2","LP2","LP1","LP2","LP5","HP4","LP5","LP4","HP2","HP4","HP2","LP2","HP1","LP1","LP2","LP5","HP4","LP5","WD","HP2","HP4","HP2","LP2","LP2","LP1","LP2","LP5","HP4","LP5","LP4","HP2","HP4","HP2","LP2","LP2","LP1","LP2","LP5","LP1","HP2","HP1","LP3","LP2","LP5","HP2","LP3","LP4","LP5","LP4","HP1","LP2","LP1","FS","HP3","LP3","HP2","LP3","LP2","LP1","LP5","LP2","LP3","LP4","LP1","HP3","FS","LP2","LP5","FS","FS","LP1","HP4","LP1","LP3","LP5","LP3","LP1","HP3","LP5","LP5","LP4","LP3","FS","HP2","LP4","LP3","FS","HP1","LP3","LP1","FS","LP5","LP3","LP2","FS","LP1","HP1","LP4","LP2","WD","LP3","LP2","HP2","LP5","LP2","LP5","HP4","FS","LP2","LP4","FS","FS","FS","LP1","HP1","LP2","FS","LP1","HP3","LP2","FS","LP1","HP3","FS","LP1","HP3","FS","FS","LP1","LP5","LP4","HP3","LP3","FS","LP2","LP3","LP5","LP5"],
+      ["LP5","LP2","FS","FS","FS","LP5","LP1","HP4","HP3","HP2","LP2","LP5","HP3","LP3","LP2","HP1","FS","LP1","HP4","HP3","HP2","LP2","LP5","HP3","LP3","LP2","HP1","FS","LP1","HP4","HP3","HP2","LP2","LP5","HP3","LP3","LP2","HP1","FS","LP1","HP4","HP3","HP2","LP2","LP5","HP3","LP3","LP2","HP1","FS","LP2","FS","LP4","LP4","LP1","HP2","HP3","LP3","FS","FS","LP2","HP1","HP2","HP4","HP2","LP1","LP4","FS","LP2","LP4","HP3","LP4","LP5","LP1","HP4","FS","LP3","LP2","FS","HP2","HP1","LP3","FS","LP1","LP4","LP3","WD","LP3","LP2","HP2","FS","LP1","LP5","LP3","LP2","LP1","HP3","LP2","FS","HP4","HP1","LP4","LP5","HP2","LP1","LP2","FS","LP1","LP4","LP3","LP3","FS","HP1","HP2","LP1","LP4","LP5","LP5","HP1","HP3","LP3","FS","LP4","LP5","HP1","LP1","HP4","LP3","LP2","HP1","LP2","LP3","LP2","HP1","LP2","LP2","HP1","LP2","LP5","HP1","HP3","LP3","LP3","LP4","HP4","FS","HP1","HP1","FS","LP3"],
+      ["LP2","LP5","FS","HP1","LP3","FS","LP2","HP2","LP5","LP4","FS","HP3","HP3","LP2","HP2","HP4","LP1","LP2","HP2","LP5","LP4","FS","HP3","HP3","LP4","HP2","HP4","LP1","WD","HP2","LP5","LP4","FS","HP3","HP3","LP2","HP2","HP4","LP1","LP2","HP2","LP5","LP4","FS","HP3","HP3","LP2","HP2","HP4","LP1","LP1","LP3","LP2","LP1","HP1","HP3","FS","FS","LP3","LP1","LP5","HP1","LP5","LP5","LP4","LP5","LP4","HP4","LP1","FS","LP3","LP1","LP3","LP2","LP5","LP3","HP3","HP1","LP2","LP4","LP1","HP2","HP1","FS","LP5","LP4","LP5","LP3","LP1","HP4","LP1","FS","LP3","LP1","FS","HP1","LP2","LP3","FS","LP5","HP2","FS","LP4","HP3","HP2","LP1","HP4","LP3","HP1","LP4","LP2","FS","FS","LP4","LP2","LP3","LP2","LP1","HP2","LP1","FS","LP2","LP3","LP1","LP4","LP2","FS","LP4","LP3","LP2","HP4","LP4","LP3","LP2","HP4","LP3","LP2","HP4","WD","LP1","HP1","LP2","FS","FS","FS","LP3","HP3","LP3","LP4","LP3"],
+      ["HP1","FS","HP1","LP1","LP4","LP3","LP2","LP2","LP3","HP1","LP4","LP5","LP5","LP2","LP3","LP1","LP5","LP2","LP2","LP3","HP1","LP4","LP5","LP5","LP2","LP3","LP1","LP5","LP2","WD","LP3","HP1","LP4","LP5","LP5","LP2","LP3","LP1","LP5","LP2","LP2","LP3","HP1","LP4","LP5","LP5","LP2","LP3","LP1","LP5","LP3","HP2","LP4","LP5","LP3","LP2","HP2","LP1","LP4","HP1","FS","FS","LP3","LP1","HP3","LP1","HP2","LP5","LP1","LP1","LP4","LP2","LP4","HP2","FS","LP3","HP4","LP4","LP5","LP4","FS","LP2","HP3","FS","FS","LP4","LP1","WD","LP3","HP4","FS","LP1","LP3","HP1","LP1","LP2","FS","HP1","LP4","LP5","LP3","HP2","LP2","HP2","LP1","HP4","LP2","LP3","LP1","LP3","LP4","FS","LP2","LP5","LP2","FS","LP1","LP4","FS","LP3","LP2","HP2","FS","FS","FS","LP1","HP3","HP2","FS","HP1","LP1","HP2","FS","HP1","LP1","FS","HP1","LP1","FS","LP4","LP2","HP2","LP3","HP4","LP4","FS","LP5","LP4","LP2","HP3"],
+      ["HP1","LP2","HP4","FS","LP3","HP3","LP2","HP1","FS","LP1","LP5","LP1","LP3","LP2","FS","LP2","LP5","LP2","HP1","FS","LP1","LP5","LP1","LP3","LP2","FS","LP2","LP5","LP2","HP1","FS","LP1","LP5","WD","LP3","LP2","FS","LP2","LP5","LP2","HP1","FS","LP1","LP5","LP1","LP3","LP2","FS","LP2","LP5","LP5","LP3","LP4","LP2","HP3","FS","LP3","HP2","LP2","LP1","HP2","FS","FS","LP1","HP3","LP3","LP1","HP2","LP4","HP1","LP5","FS","LP3","LP3","LP2","HP4","LP4","FS","HP1","LP1","LP4","FS","FS","HP3","HP1","LP1","LP3","LP2","HP4","FS","LP2","LP3","LP3","HP3","LP2","HP1","FS","LP1","LP2","WD","HP2","LP4","LP2","LP4","LP2","HP2","FS","LP4","HP1","LP4","LP5","LP3","HP3","HP2","LP3","HP2","LP1","LP3","LP5","HP2","FS","LP3","LP1","HP3","FS","LP1","HP2","LP4","HP3","LP5","LP4","LP4","HP3","LP5","LP4","HP3","LP5","LP4","LP3","LP5","HP2","LP5","HP4","LP4","LP3","LP1","LP4","FS","FS","FS"]
+    ],
+    "FGHR": [
+      ["LP4","LP1","HP4","LP4","LP1","LP5","HP4","LP2","LP4","LP5","HP4","HP2","LP2","MO","LP5","HP1","LP2","HP3","LP3","LP2","HP2","HP1","LP2","LP2","HP4","HP2","LP2","LP4","LP3","LP5","HP1","LP2","LP1","LP1","HP3","LP3","HP2","LP4","LP2","LP1","LP2","LP5","LP2","LP4","LP1","HP3","HP2","LP2","LP4","LP5","HP1","LP1","HP4","LP1","LP3","LP5","LP3","LP1","HP3","MO","LP3","LP4","LP3","LP1","HP2","LP4","LP3","LP5","HP1","LP1","LP1","LP3","LP2","LP3","LP5","LP5","LP1","HP1","LP4","LP2","HP3","LP3","LP2","HP2","HP1","HP1","LP2","HP4","HP2","LP2","LP4","LP3","LP1","LP5","LP4","HP1","LP2","LP3","LP1","HP3","LP5","LP3","LP1","LP2","LP4","HP3","LP3","LP1","LP2","LP3","LP1","MO","LP4","LP1","HP4","LP4","LP1","LP5","HP4","LP2","LP4","LP5","HP4","HP2","LP2","HP1","LP5","HP1","LP2","HP3","LP3","LP2","HP2","HP1","LP2","LP2","HP4","HP2","LP2","LP4","LP3","LP5","HP1","LP2","MO","LP1","HP3","LP3","HP2","LP4","LP2","LP1","LP2","LP5","LP2","LP4","LP1","HP3","HP2","LP2","LP4","LP5","HP1","LP1","HP4","LP1","LP3","LP5","LP3","LP1","HP3","LP1","LP3","LP4","LP3","LP1","HP2","LP4","LP3","LP5","HP1","LP1","LP1","LP3","LP2","LP3","LP5","LP5","LP1","HP1","LP4","LP2","HP3","LP3","LP2","HP2","HP1","HP1","LP2","HP4","HP2","LP2","LP4","LP3","LP1","LP5","LP4","HP1","LP2","LP3","LP1","HP3","LP5","LP3","LP1","LP1","HP2","HP1","LP2","LP2","HP4","HP2","LP2","LP4","LP3","LP5","HP1","LP2","LP1","LP1","HP3","LP3","HP2","LP4","LP2","LP1","LP2","LP5","LP2","HP2","MO","LP2","LP2","HP4","HP2","LP2","LP4","LP3","LP5","HP1","LP2","LP1","LP1","HP3","LP3","HP2","LP4","LP2","LP1","LP2","LP5","LP2","LP4","HP3","LP3","LP2","LP4","LP3","LP5","HP1","LP2","LP1","LP1","HP3","LP3","MO","LP4","LP2","LP1","LP2","LP5","LP2","HP2","HP1","LP2","LP2","HP4","HP2","LP2","LP4","LP3","LP5","HP1","LP2","LP1","LP1","HP3","LP3","HP2","LP4","LP2","LP1","LP2","LP5","LP2","LP4","HP3","LP3","LP2","LP4","LP3","LP5","HP1","LP2","LP1","MO","HP3","LP3","HP2","LP4","LP2","LP1","LP2","LP5","LP2","HP2","HP1","LP2","LP2","HP4","HP2","LP2","LP4","LP3","LP5","HP1","LP2","LP1","LP1","HP3","LP3","HP2","LP4","LP2","LP1","MO","LP5","LP2","LP4","HP3","LP3","LP1","LP2","LP4","LP3","LP5","HP1","LP2","LP1","LP1","HP3","LP3","HP2","LP4","LP2","LP1","LP2","LP5","LP2","HP2","HP1","LP2","LP2","HP4","HP2","LP2","LP4","LP3","LP5","HP1","LP2","MO","LP1","HP3","LP3","HP2","LP4","LP2","LP1","LP2","LP5","LP2","LP4","HP3","LP3","LP1","LP2","LP3","LP1","LP1"],
+      ["HP1","LP2","LP5","HP3","LP2","HP1","LP1","HP4","HP3","LP2","LP5","HP2","HP3","LP1","LP2","LP4","LP2","HP2","LP1","MO","LP5","LP4","LP4","LP1","LP2","HP3","LP3","LP5","LP1","LP2","HP1","HP2","HP4","LP3","LP1","LP4","LP4","LP2","LP4","HP3","LP5","LP3","LP1","HP4","LP5","LP3","LP2","LP1","HP2","HP1","LP1","LP5","LP1","LP4","LP3","LP2","LP3","LP2","HP2","HP2","LP1","LP2","MO","LP5","LP1","HP3","LP2","LP5","HP4","HP1","LP2","LP2","HP2","LP1","LP5","LP5","LP1","LP4","LP3","LP3","LP2","HP1","HP2","LP1","LP1","LP2","LP1","HP1","HP3","LP3","LP5","LP4","LP2","HP1","HP2","HP4","HP1","LP1","HP1","LP2","LP1","HP1","HP3","LP5","LP3","LP4","HP4","MO","HP1","HP1","HP2","LP3","HP1","LP2","LP5","HP3","LP2","HP1","LP1","HP4","HP3","LP2","LP5","HP2","HP3","LP1","LP2","LP4","LP2","HP2","LP1","LP1","LP5","LP4","LP4","LP1","LP2","HP3","LP3","LP5","LP1","MO","HP1","HP2","HP4","LP3","LP1","LP4","LP4","LP2","LP4","HP3","LP5","LP3","LP1","HP4","LP5","LP3","LP2","LP1","HP2","HP1","LP1","LP5","LP1","LP4","LP3","LP2","LP3","LP2","HP2","HP2","LP1","LP2","LP3","LP5","LP1","HP3","LP2","LP5","HP4","HP1","LP1","LP2","HP2","LP1","LP5","LP5","LP1","LP4","LP3","LP3","LP2","HP1","HP2","LP1","LP5","LP2","LP1","HP1","HP3","LP3","LP5","LP4","LP2","HP1","HP2","HP4","HP1","LP1","HP1","LP2","LP1","HP1","HP3","LP5","LP5","LP4","LP4","LP1","LP2","HP3","LP3","LP5","LP1","LP2","HP1","HP2","HP4","LP3","LP1","LP4","LP4","LP2","LP4","HP3","LP5","LP3","LP1","LP5","LP4","LP4","LP1","LP2","MO","LP3","LP5","LP1","LP2","HP1","HP2","HP4","LP3","LP1","LP4","LP4","LP2","LP4","HP3","LP5","LP3","LP1","LP3","LP4","HP4","LP3","LP5","LP1","LP2","HP1","HP2","HP4","LP3","LP1","LP4","LP4","LP2","LP4","HP3","MO","LP3","LP1","LP5","LP4","LP4","LP1","LP2","HP3","LP3","LP5","LP1","LP2","HP1","HP2","HP4","LP3","LP1","LP4","LP4","LP2","LP4","HP3","LP5","LP3","LP1","LP3","LP4","HP4","LP3","LP5","LP1","LP2","HP1","HP2","HP4","LP3","LP1","LP4","LP4","LP2","MO","HP3","LP5","LP3","LP1","LP5","LP4","LP4","LP1","LP2","HP3","LP3","LP5","LP1","LP2","HP1","HP2","HP4","LP3","LP1","LP4","LP4","LP2","LP4","MO","LP5","LP3","LP1","LP3","LP4","HP4","LP2","LP3","LP5","LP1","LP2","HP1","HP2","HP4","LP3","LP1","LP4","LP4","LP2","LP4","HP3","LP5","LP3","LP1","LP5","LP4","LP4","LP1","LP2","HP3","LP3","LP5","LP1","MO","HP1","HP2","HP4","LP3","LP1","LP4","LP4","LP2","LP4","HP3","LP5","LP3","LP1","LP3","LP4","HP4","LP1","HP1","HP1","HP2","LP3"],
+      ["LP2","LP3","LP4","HP1","LP3","MO","LP2","HP2","LP2","LP4","LP4","HP3","HP3","LP5","LP2","HP4","LP1","HP3","LP1","LP5","LP1","LP2","LP1","HP1","LP3","LP5","LP1","HP1","LP1","HP4","LP4","LP3","LP2","LP5","HP1","HP2","HP4","LP2","LP4","LP3","LP1","LP2","LP5","LP2","LP3","HP3","HP1","LP2","LP4","LP1","HP2","HP1","LP5","LP1","LP4","LP2","LP2","LP1","HP4","MO","LP5","LP3","LP1","LP4","HP1","LP2","LP3","LP5","LP1","HP2","LP2","LP4","HP3","LP5","LP3","HP4","LP3","LP1","LP4","LP2","LP5","LP1","LP4","LP2","LP3","LP5","LP1","HP2","LP1","LP1","LP2","LP3","HP2","LP4","LP2","LP5","LP4","LP3","LP2","HP4","LP3","LP1","HP1","HP1","HP1","LP5","LP2","LP3","HP3","LP1","LP4","LP3","LP2","LP3","LP4","HP1","LP3","MO","LP2","HP2","LP2","LP4","LP4","HP3","HP3","LP5","LP2","HP4","LP1","HP3","LP1","LP5","LP1","LP2","LP1","HP1","LP3","LP5","LP1","HP1","LP1","HP4","LP4","LP3","LP2","LP5","HP1","HP2","HP4","MO","LP4","LP3","LP1","LP2","LP5","LP2","LP3","HP3","HP1","LP2","LP4","LP1","HP2","HP1","LP5","LP1","LP4","LP2","LP2","LP1","HP4","LP1","LP5","LP3","LP1","LP4","HP1","LP2","LP3","LP5","LP1","HP2","LP2","LP4","HP3","LP5","LP3","HP4","LP3","HP1","LP4","LP2","LP5","LP3","LP4","LP2","LP3","LP5","LP1","HP2","LP1","LP1","LP2","LP3","HP2","LP4","LP2","LP5","LP4","LP3","LP2","HP4","LP3","LP1","HP1","HP2","LP1","LP2","LP1","HP1","LP3","LP5","LP1","HP1","LP1","HP4","LP4","LP3","LP2","LP5","HP1","HP2","HP4","LP2","LP4","LP3","LP1","LP2","MO","LP1","LP2","LP1","HP1","LP3","LP5","LP1","HP1","LP1","HP4","LP4","LP3","LP2","LP5","HP1","HP2","HP4","LP2","LP4","LP3","LP1","LP2","LP5","HP1","LP5","LP2","LP1","HP1","LP1","HP4","LP4","LP3","MO","LP5","HP1","HP2","HP4","LP2","LP4","LP3","LP1","LP2","LP5","LP1","LP2","LP1","HP1","LP3","LP5","LP1","HP1","LP1","HP4","LP4","LP3","LP2","LP5","HP1","HP2","HP4","LP2","LP4","LP3","LP1","LP2","LP5","HP1","LP5","LP2","LP1","MO","LP1","HP4","LP4","LP3","LP2","LP5","HP1","HP2","HP4","LP2","LP4","LP3","LP1","LP2","LP5","LP1","LP2","LP1","HP1","LP3","LP5","LP1","HP1","LP1","HP4","LP4","LP3","LP2","LP5","HP1","HP2","HP4","LP2","LP4","LP3","MO","LP2","LP5","HP1","LP5","LP2","LP3","LP1","HP1","LP1","HP4","LP4","LP3","LP2","LP5","HP1","HP2","HP4","LP2","LP4","LP3","LP1","LP2","LP5","LP1","LP2","LP1","HP1","LP3","LP5","LP1","HP1","LP1","HP4","LP4","MO","LP2","LP5","HP1","HP2","HP4","LP2","LP4","LP3","LP1","LP2","LP5","HP1","LP5","LP2","LP3","HP3","LP1","LP4","LP3"],
+      ["HP1","LP3","HP1","LP5","LP1","LP3","LP2","LP5","LP2","HP1","LP4","LP1","LP3","MO","LP3","HP4","HP1","LP2","LP1","LP3","HP1","LP4","LP3","HP3","LP2","HP2","LP1","LP4","HP1","HP2","HP2","LP3","LP1","HP3","LP1","HP2","LP1","LP1","HP4","LP4","LP2","LP4","HP2","LP1","LP3","HP4","LP4","LP1","LP4","LP5","LP5","HP3","LP2","LP5","LP4","MO","LP2","LP3","LP2","LP5","LP1","LP3","HP1","LP1","LP2","LP5","HP1","LP4","LP1","LP2","HP2","LP2","LP5","LP1","HP4","LP5","LP2","LP1","LP3","HP1","LP3","LP2","LP1","LP2","HP2","LP1","LP2","LP5","LP3","LP2","HP2","LP5","LP3","LP2","LP1","HP3","HP2","LP1","HP1","LP1","LP5","LP4","LP2","HP2","LP3","HP4","LP4","HP1","LP1","LP4","LP2","HP3","HP1","LP3","HP1","LP5","LP1","LP3","LP2","LP5","LP2","HP1","LP4","MO","LP3","LP2","LP3","HP4","HP1","LP2","LP1","LP3","HP1","LP4","LP3","HP3","LP2","HP2","LP1","LP4","HP1","HP2","HP2","MO","LP1","HP3","LP1","HP2","LP1","LP1","HP4","LP4","LP2","LP4","HP2","LP2","LP3","HP4","LP4","LP1","LP4","LP5","LP5","HP3","LP2","LP5","LP4","LP1","LP2","LP3","LP2","LP5","LP1","LP3","HP1","LP1","LP2","LP5","HP1","LP4","LP1","LP2","HP2","LP2","LP5","LP2","HP4","LP5","LP2","LP1","LP3","HP1","LP3","LP2","LP1","LP2","HP2","LP1","LP1","LP5","LP3","LP2","HP2","LP5","LP3","LP2","LP1","HP3","HP2","LP1","HP1","LP1","LP5","LP4","LP2","LP3","HP1","LP4","LP3","HP3","LP2","HP2","LP1","LP4","HP1","HP2","HP2","LP3","LP1","HP3","LP1","HP2","LP1","LP1","HP4","LP4","LP2","LP4","HP2","HP1","LP4","LP3","HP3","LP2","HP2","LP1","MO","HP1","HP2","HP2","LP3","LP1","HP3","LP1","HP2","LP1","LP1","HP4","LP4","LP2","LP4","HP2","LP3","HP4","LP4","LP1","LP4","HP1","HP2","HP2","LP3","LP1","HP3","LP1","HP2","LP1","LP1","HP4","LP4","MO","LP4","HP2","HP1","LP4","LP3","HP3","LP2","HP2","LP1","LP4","HP1","HP2","HP2","LP3","LP1","HP3","LP1","HP2","LP1","LP1","HP4","LP4","LP2","LP4","HP2","LP3","HP4","LP4","LP1","LP4","HP1","HP2","HP2","LP3","LP1","HP3","LP1","MO","LP1","LP1","HP4","LP4","LP2","LP4","HP2","HP1","LP4","LP3","HP3","LP2","HP2","LP1","LP4","HP1","HP2","HP2","LP3","LP1","HP3","LP1","HP2","LP1","LP1","MO","LP4","LP2","LP4","HP2","LP3","HP4","LP4","LP3","LP1","LP4","HP1","HP2","HP2","LP3","LP1","HP3","LP1","HP2","LP1","LP1","HP4","LP4","LP2","LP4","HP2","HP1","LP4","LP3","HP3","LP2","HP2","LP1","LP4","HP1","HP2","HP2","LP3","LP1","MO","LP1","HP2","LP1","LP1","HP4","LP4","LP2","LP4","HP2","LP3","HP4","LP4","HP1","LP1","LP4","LP2","HP3"],
+      ["HP1","LP2","HP4","LP5","HP1","HP3","LP2","HP1","LP5","LP1","MO","HP2","LP3","LP5","HP4","LP2","HP2","LP3","LP1","LP4","HP1","LP4","LP1","HP3","LP5","LP3","HP2","LP1","LP4","HP2","LP5","LP3","LP1","HP3","LP3","LP1","HP2","LP4","HP1","LP1","LP4","LP3","HP2","LP2","HP4","LP2","LP2","HP1","LP1","LP4","LP3","LP5","HP3","HP1","LP1","HP1","LP2","HP4","LP5","LP5","MO","LP2","HP3","LP2","HP1","LP5","LP1","LP5","LP2","HP2","LP5","LP2","HP4","LP2","LP2","LP1","LP4","HP1","LP4","LP2","LP3","HP3","HP4","LP3","HP2","LP1","LP3","LP2","HP2","LP5","LP3","LP1","HP3","LP2","LP1","HP2","LP4","HP1","LP1","LP4","LP3","HP1","HP2","LP2","HP4","LP4","HP1","LP1","LP4","LP3","LP5","HP3","HP1","LP2","HP4","LP5","HP1","HP3","LP2","HP1","LP5","LP1","MO","HP2","LP3","LP5","HP4","LP2","HP2","LP3","LP1","LP4","HP1","LP4","LP1","HP3","LP5","LP3","HP2","LP1","LP4","HP2","LP5","LP3","LP1","HP3","LP3","LP1","HP2","MO","HP1","LP1","LP4","LP3","HP2","LP2","HP4","LP2","LP2","HP1","LP1","LP4","LP3","LP5","HP3","HP1","LP1","HP1","LP2","HP4","LP5","LP5","LP3","LP2","HP3","LP2","HP1","LP5","LP1","LP5","LP2","HP2","LP5","LP2","HP4","LP2","LP1","LP1","LP4","HP1","LP4","LP2","LP2","HP3","HP4","LP3","HP2","LP1","LP3","LP2","HP2","LP5","LP3","LP1","HP3","LP2","LP1","HP2","LP4","HP1","LP1","LP4","LP3","HP1","HP2","HP3","HP1","LP4","LP1","HP3","LP5","LP3","HP2","LP1","LP4","HP2","LP5","LP3","LP1","HP3","LP3","LP1","HP2","LP4","HP1","LP1","LP4","LP3","HP2","HP1","LP4","LP1","HP3","LP5","LP3","HP2","MO","LP4","HP2","LP5","LP3","LP1","HP3","LP3","LP1","HP2","LP4","HP1","LP1","LP4","LP3","HP2","HP4","LP4","HP1","HP2","LP1","LP4","HP2","LP5","LP3","LP1","HP3","LP3","MO","HP2","LP4","HP1","LP1","LP4","LP3","HP2","HP1","LP4","LP1","HP3","LP5","LP3","HP2","LP1","LP4","HP2","LP5","LP3","LP1","HP3","LP3","LP1","HP2","LP4","HP1","LP1","LP4","LP3","HP2","HP4","LP4","HP1","HP2","LP1","LP4","HP2","LP5","MO","LP1","HP3","LP3","LP1","HP2","LP4","HP1","LP1","LP4","LP3","HP2","HP1","LP4","LP1","HP3","LP5","LP3","HP2","LP1","LP4","HP2","LP5","LP3","LP1","HP3","LP3","LP1","HP2","LP4","HP1","LP1","MO","LP3","HP2","HP4","LP4","HP1","LP4","HP2","LP1","LP4","HP2","LP5","LP3","LP1","HP3","LP3","LP1","HP2","LP4","HP1","LP1","LP4","LP3","HP2","HP1","LP4","LP1","HP3","LP5","LP3","HP2","LP1","LP4","HP2","MO","LP3","LP1","HP3","LP3","LP1","HP2","LP4","HP1","LP1","LP4","LP3","HP2","HP4","LP4","HP1","LP1","LP4","LP3","LP5","HP3"]
+    ]
+  }
+}

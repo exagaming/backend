@@ -1,0 +1,37 @@
+export const BLACKJACK = 21
+
+export const BLACKJACK_TOTAL_DECKS = 6
+
+export const BLACK_JACK_DOUBLE_POINTS = [9, 10, 11]
+
+export const BLACKJACK_DECK_SIZE = 34
+
+export const BLACKJACK_RESULT = {
+  PUSH: 'PUSH',
+  SPLIT_HOLD: 'SPLIT_HOLD',
+  PLAYER_WIN: 'PLAYER_WIN',
+  DEALER_WIN: 'DEALER_WIN',
+  PLAYER_BUST: 'PLAYER_BUST',
+  DEALER_BUST: 'DEALER_BUST',
+  PLAYER_BLACKJACK: 'PLAYERS_BLACKJACK',
+  DEALER_BLACKJACK: 'DEALERS_BLACKJACK'
+}
+
+export const BLACKJACK_ODDS = {
+  WIN: 2,
+  BLACKJACK: 2.5,
+  INSURANCE_WIN: 3
+}
+
+export const BLACKJACK_BET_TYPES = {
+  MAIN: 'main',
+  SPLIT: 'split',
+  DOUBLE: 'double',
+  INSURANCE: 'insurance'
+}
+
+export const BLACKJACK_STAND_TYPES = {
+  HIT: 'hit',
+  DOUBLE: 'double',
+  INSURANCE: 'insurance'
+}

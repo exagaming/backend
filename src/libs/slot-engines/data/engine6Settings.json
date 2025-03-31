@@ -1,0 +1,245 @@
+{
+  "rows": 7,
+  "reels": 7,
+  "minimumClusterSymbolOccurrence": 5,
+  "symbols": [
+    "AA",
+    "BB",
+    "CC",
+    "DD",
+    "EE",
+    "FF",
+    "GG",
+    "SC"
+  ],
+  "symbolKeys": {
+    "AA": "AA",
+    "BB": "BB",
+    "CC": "CC",
+    "DD": "DD",
+    "EE": "EE",
+    "FF": "FF",
+    "GG": "GG",
+    "SC": "SC"
+  },
+  "valueSymbols": [
+    "AA",
+    "BB",
+    "CC",
+    "DD",
+    "EE",
+    "FF",
+    "GG"
+  ],
+  "symbolIdMap": {
+    "AA": 201,
+    "BB": 202,
+    "CC": 203,
+    "DD": 101,
+    "EE": 102,
+    "FF": 103,
+    "GG": 104,
+    "SC": 25
+  },
+  "symbolMultiplier": {
+    "AA": {"5":1,"6":1.5,"7":1.75,"8":2,"9":2.5,"10":5,"11":7.5,"12":15,"13":35,"14":70,"15":150},
+    "BB": {"5":0.75,"6":1,"7":1.25,"8":1.5,"9":2,"10":4,"11":6,"12":12.5,"13":30,"14":60,"15":100},
+    "CC": {"5":0.5,"6":0.75,"7":1,"8":1.25,"9":1.5,"10":3,"11":4.5,"12":10,"13":20,"14":40,"15":60},
+    "DD": {"5":0.4,"6":0.5,"7":0.75,"8":1,"9":1.25,"10":2,"11":3,"12":5,"13":10,"14":20,"15":40},
+    "EE": {"5":0.3,"6":0.4,"7":0.5,"8":0.75,"9":1,"10":1.5,"11":2.5,"12":3.5,"13":8,"14":15,"15":30},
+    "FF": {"5":0.25,"6":0.3,"7":0.4,"8":0.5,"9":0.75,"10":1.25,"11":2,"12":3,"13":6,"14":12,"15":25},
+    "GG": {"5":0.2,"6":0.25,"7":0.3,"8":0.4,"9":0.5,"10":1,"11":1.5,"12":2.5,"13":5,"14":10,"15":20}
+  },
+  "buyFreeSpinsPayWindowSelection": {
+    "weightTable": {
+      "1": 1000,
+      "2": 300,
+      "3": 20,
+      "4": 5,
+      "5": 1
+    },
+    "payWindows": [
+      [
+        ["SC", "GG", "EE", "AA", "EE", "EE", "FF"],
+        ["FF", "BB", "SC", "BB", "DD", "FF", "BB"],
+        ["CC", "GG", "EE", "EE", "AA", "GG", "AA"],
+        ["DD", "BB", "FF", "DD", "BB", "BB", "FF"],
+        ["SC", "GG", "AA", "CC", "AA", "CC", "EE"],
+        ["FF", "DD", "FF", "BB", "BB", "FF", "DD"],
+        ["EE", "CC", "AA", "EE", "CC", "AA", "GG"]
+      ],
+      [
+        ["SC", "GG", "EE", "AA", "EE", "EE", "FF"],
+        ["FF", "BB", "SC", "BB", "DD", "FF", "BB"],
+        ["CC", "GG", "EE", "SC", "AA", "GG", "AA"],
+        ["DD", "BB", "FF", "DD", "BB", "BB", "FF"],
+        ["SC", "GG", "AA", "CC", "AA", "CC", "EE"],
+        ["FF", "DD", "FF", "BB", "BB", "FF", "DD"],
+        ["EE", "CC", "AA", "EE", "CC", "AA", "GG"]
+      ],
+      [
+        ["SC", "GG", "EE", "AA", "EE", "EE", "FF"],
+        ["FF", "BB", "SC", "BB", "DD", "FF", "BB"],
+        ["CC", "GG", "EE", "SC", "AA", "GG", "AA"],
+        ["DD", "BB", "FF", "DD", "BB", "BB", "SC"],
+        ["SC", "GG", "AA", "CC", "AA", "CC", "EE"],
+        ["FF", "DD", "FF", "BB", "BB", "FF", "DD"],
+        ["EE", "CC", "AA", "EE", "CC", "AA", "GG"]
+      ],
+      [
+        ["SC", "GG", "EE", "AA", "EE", "EE", "FF"],
+        ["FF", "BB", "SC", "BB", "DD", "FF", "BB"],
+        ["CC", "GG", "EE", "SC", "AA", "GG", "AA"],
+        ["DD", "BB", "FF", "DD", "BB", "BB", "SC"],
+        ["SC", "GG", "AA", "CC", "AA", "CC", "EE"],
+        ["FF", "DD", "FF", "BB", "SC", "FF", "DD"],
+        ["EE", "CC", "AA", "EE", "CC", "AA", "GG"]
+      ],
+      [
+        ["SC", "GG", "EE", "AA", "EE", "EE", "FF"],
+        ["FF", "BB", "SC", "BB", "DD", "FF", "BB"],
+        ["CC", "GG", "EE", "SC", "AA", "GG", "AA"],
+        ["DD", "BB", "FF", "DD", "BB", "BB", "SC"],
+        ["SC", "GG", "AA", "CC", "AA", "CC", "EE"],
+        ["FF", "DD", "FF", "BB", "SC", "FF", "DD"],
+        ["EE", "CC", "AA", "EE", "CC", "SC", "GG"]
+      ]
+    ]
+  },
+  "freeSpinsAwardedForScatters": {
+    "3": 10,
+    "4": 12,
+    "5": 15,
+    "6": 20,
+    "7": 30
+  },
+  "baseGameWeightedClusterDetails": {
+    "clusterSizeWeightTable": {
+      "5": 1000,
+      "6": 400,
+      "7": 160,
+      "8": 64,
+      "9": 25,
+      "10": 10,
+      "11": 4,
+      "12": 1
+    },
+    "symbolWeightTable": {
+      "AA": 10,
+      "BB": 24,
+      "CC": 38,
+      "DD": 52,
+      "EE": 66,
+      "FF": 80,
+      "GG": 94
+    },
+    "numberOfClustersWeightTable": {
+      "1": 70,
+      "2": 30
+    }
+  },
+  "freeGameWeightedClusterDetails": {
+    "clusterSizeWeightTable": {
+      "5": 1000,
+      "6": 200,
+      "7": 40,
+      "8": 8,
+      "9": 1
+    },
+    "symbolWeightTable": {
+      "AA": 300,
+      "BB": 400,
+      "CC": 500,
+      "DD": 600,
+      "EE": 700,
+      "FF": 800,
+      "GG": 900
+    },
+    "numberOfClustersWeightTable": {
+      "1": 100
+    }
+  },
+  "buyFreeGameWeightedClusterDetails": {
+    "clusterSizeWeightTable": {
+      "5": 1000,
+      "6": 50,
+      "7": 2,
+      "8": 1
+    },
+    "symbolWeightTable": {
+      "AA": 300,
+      "BB": 400,
+      "CC": 500,
+      "DD": 600,
+      "EE": 700,
+      "FF": 800,
+      "GG": 900
+    },
+    "numberOfClustersWeightTable": {
+      "1": 100
+    }
+  },
+  "glossaryTerms": {
+    "FG1": "FG1",
+    "BG2": "BG2",
+    "TUMBLE": "TUMBLE"
+  },
+  "baseGamePayWindowGenerationTypeTable": {
+    "WEIGHTED_CLUSTERS": 20,
+    "REEL_SETS": 80
+  },
+  "freeGamePayWindowGenerationTypeTable": {
+    "WEIGHTED_CLUSTERS": 43,
+    "REEL_SETS": 57
+  },
+  "buyFreeGamePayWindowGenerationTypeTable": {
+    "WEIGHTED_CLUSTERS": 41,
+    "REEL_SETS": 59
+  },
+  "genericSpinFromReelSetWeightTable": {
+    "BG1": 50,
+    "BG3": 50
+  },
+  "freeSpinUpperBound": {
+    "BUY_FREE_SPIN": 50,
+    "NORMAL_FREE_SPIN": 55
+  },
+  "reelSets": {
+    "BG1": [
+      ["SC","GG","EE","AA","EE","EE","FF","CC","AA","EE","AA","GG","GG","AA","GG","EE","CC","CC","CC","CC","CC","GG","CC","GG","EE","GG","EE","CC","EE","AA","CC","AA","EE","CC","CC","EE","GG","EE","GG","CC","AA","CC","AA","AA","CC","CC","GG","AA","EE","AA","EE","GG","EE","AA","EE","EE","CC","GG","CC","DD","GG","AA","CC","CC","AA","GG","AA","AA","AA","EE","AA","CC","CC","GG","CC","EE","GG","EE","AA","EE","AA","CC","EE","CC","EE","AA","AA","GG","AA","GG","EE","AA","AA","CC","GG","CC","AA","CC","GG","AA","EE","FF","GG","EE","EE","CC","GG","GG","GG","CC","AA","AA","EE","GG","AA","AA","AA","GG","GG","GG","GG","GG","GG","BB","GG","CC","GG","EE","EE","CC","CC","AA","CC","EE","CC","EE","GG","BB","EE","AA","EE","CC","AA","CC","AA","AA","CC","GG","DD","EE","CC","CC","EE","AA","AA","GG","EE","SC","GG","CC","AA","AA","AA","EE","GG","AA","CC","GG","EE","GG","AA","CC","AA","GG","GG","AA","GG","GG","DD","EE","EE","BB","AA","EE","EE","CC","CC","EE","GG","EE","CC","CC","GG","AA","GG","GG","CC","EE","GG","CC","AA","EE","GG","EE","AA","FF","CC","CC","EE","EE","EE","SC","GG","EE","AA","EE","EE"],
+      ["AA","FF","FF","DD","DD","DD","FF","DD","BB","GG","FF","FF","DD","DD","FF","DD","FF","BB","DD","DD","BB","DD","DD","DD","BB","BB","FF","FF","BB","FF","FF","FF","FF","FF","FF","BB","DD","BB","BB","BB","DD","FF","FF","FF","FF","DD","DD","DD","BB","BB","FF","DD","BB","FF","FF","AA","FF","BB","DD","DD","DD","FF","FF","DD","BB","DD","DD","BB","FF","BB","SC","BB","DD","FF","BB","BB","EE","DD","FF","BB","CC","DD","CC","DD","DD","DD","FF","DD","BB","BB","DD","BB","BB","DD","BB","FF","FF","BB","BB","BB","FF","BB","DD","BB","DD","FF","BB","BB","DD","FF","DD","FF","FF","BB","FF","BB","AA","DD","DD","BB","DD","FF","BB","FF","FF","FF","BB","DD","DD","DD","BB","FF","FF","BB","DD","BB","EE","BB","BB","FF","FF","FF","BB","FF","FF","GG","GG","BB","DD","FF","CC","DD","BB","DD","BB","BB","BB","DD","FF","EE","DD","DD","BB","AA","FF","FF","DD","DD","DD"],
+      ["AA","AA","CC","DD","AA","GG","CC","AA","EE","AA","EE","EE","CC","CC","GG","EE","CC","CC","EE","GG","GG","GG","GG","GG","CC","CC","GG","EE","CC","GG","GG","CC","CC","AA","GG","EE","AA","EE","AA","CC","GG","GG","CC","AA","EE","EE","GG","AA","GG","AA","AA","AA","GG","EE","CC","GG","AA","AA","EE","EE","CC","GG","GG","AA","EE","AA","EE","FF","GG","GG","GG","EE","CC","GG","GG","CC","EE","AA","EE","EE","AA","DD","EE","GG","CC","EE","EE","GG","CC","CC","GG","EE","AA","GG","CC","AA","CC","GG","EE","CC","FF","EE","CC","CC","AA","CC","GG","EE","EE","AA","GG","AA","FF","EE","GG","CC","AA","AA","AA","AA","CC","GG","AA","CC","GG","AA","EE","CC","BB","EE","EE","EE","EE","GG","CC","AA","CC","CC","CC","AA","GG","BB","EE","SC","EE","EE","CC","CC","GG","EE","EE","GG","AA","AA","AA","EE","CC","EE","GG","GG","CC","AA","AA","GG","AA","EE","EE","GG","AA","CC","AA","CC","GG","AA","CC","EE","AA","AA","EE","AA","CC","CC","AA","CC","EE","EE","CC","CC","GG","GG","AA","GG","SC","AA","GG","GG","AA","EE","CC","DD","CC","CC","AA","EE","CC","AA","GG","BB","EE","GG","EE","AA","AA","CC","DD","AA","GG"],
+      ["BB","DD","BB","FF","DD","BB","FF","FF","AA","FF","DD","FF","DD","FF","FF","BB","BB","DD","BB","BB","DD","FF","DD","DD","FF","DD","DD","FF","FF","FF","FF","DD","BB","DD","DD","BB","DD","FF","BB","DD","DD","DD","DD","DD","DD","DD","DD","BB","DD","DD","BB","DD","DD","BB","BB","BB","GG","GG","BB","FF","BB","AA","DD","FF","BB","FF","FF","FF","BB","DD","BB","FF","EE","CC","BB","DD","DD","FF","DD","BB","DD","BB","FF","BB","DD","FF","CC","FF","DD","BB","FF","AA","EE","BB","FF","BB","FF","BB","FF","FF","FF","GG","DD","FF","DD","BB","BB","FF","FF","FF","FF","DD","BB","BB","DD","BB","BB","FF","FF","DD","BB","DD","DD","DD","BB","DD","FF","DD","BB","CC","FF","FF","DD","BB","BB","DD","DD","BB","FF","DD","BB","BB","FF","DD","SC","BB","FF","FF","DD","EE","FF","BB","FF","BB","BB","BB","FF","FF","BB","BB","FF","BB","FF","BB","DD","BB","FF","DD","BB"],
+      ["CC","AA","GG","AA","EE","CC","CC","FF","AA","AA","EE","GG","AA","EE","CC","GG","AA","EE","CC","AA","GG","AA","EE","CC","AA","CC","GG","CC","GG","CC","EE","CC","EE","CC","GG","GG","EE","EE","AA","EE","GG","AA","BB","CC","CC","CC","GG","EE","AA","GG","CC","CC","AA","GG","CC","AA","EE","GG","EE","CC","GG","CC","CC","GG","AA","GG","CC","EE","GG","GG","GG","GG","EE","AA","EE","GG","AA","GG","SC","CC","AA","GG","CC","AA","EE","CC","AA","AA","EE","EE","CC","AA","EE","AA","EE","EE","EE","CC","GG","GG","CC","AA","AA","GG","EE","AA","EE","GG","AA","EE","GG","GG","EE","EE","AA","AA","EE","EE","AA","GG","EE","AA","AA","CC","CC","AA","CC","CC","CC","EE","AA","CC","CC","AA","EE","AA","EE","CC","CC","CC","EE","GG","EE","GG","EE","CC","GG","GG","DD","CC","AA","CC","GG","CC","AA","EE","GG","GG","AA","GG","CC","DD","AA","GG","GG","SC","GG","AA","CC","AA","CC","EE","DD","EE","AA","CC","EE","CC","EE","GG","GG","AA","GG","EE","AA","EE","GG","FF","CC","EE","BB","FF","CC","AA","GG","EE","GG","EE","EE","AA","GG","AA","CC","GG","EE","AA","BB","AA","CC","EE","GG","CC","AA","GG","AA","EE","CC"],
+      ["DD","BB","DD","DD","FF","BB","AA","FF","DD","BB","BB","FF","FF","FF","FF","BB","FF","BB","DD","BB","GG","FF","CC","FF","DD","EE","GG","FF","FF","BB","DD","FF","BB","DD","DD","BB","DD","BB","BB","DD","CC","AA","BB","FF","DD","FF","DD","BB","DD","DD","BB","BB","DD","BB","FF","FF","FF","AA","BB","DD","DD","DD","DD","FF","BB","BB","BB","FF","BB","FF","BB","BB","BB","BB","DD","DD","BB","DD","FF","FF","DD","FF","BB","BB","FF","DD","BB","BB","BB","BB","FF","BB","FF","BB","DD","DD","DD","BB","BB","DD","BB","EE","DD","DD","GG","DD","DD","FF","BB","FF","BB","FF","FF","FF","BB","FF","DD","CC","FF","FF","DD","DD","DD","FF","FF","DD","FF","DD","DD","BB","FF","DD","EE","FF","DD","FF","DD","FF","FF","FF","BB","FF","FF","FF","BB","DD","FF","BB","BB","FF","BB","SC","BB","DD","FF","DD","DD","BB","BB","DD","DD","FF","DD","DD","BB","DD","DD","FF","BB"],
+      ["EE","CC","GG","CC","CC","GG","GG","EE","EE","CC","GG","AA","CC","EE","CC","AA","EE","EE","AA","CC","FF","CC","GG","CC","EE","AA","EE","GG","GG","FF","CC","EE","GG","AA","EE","CC","AA","EE","EE","AA","GG","EE","SC","CC","CC","EE","EE","EE","GG","AA","GG","EE","CC","EE","GG","CC","CC","CC","AA","GG","EE","AA","FF","AA","GG","EE","CC","AA","CC","CC","AA","AA","CC","EE","GG","EE","AA","CC","CC","EE","AA","EE","AA","CC","AA","CC","CC","GG","GG","EE","CC","AA","SC","CC","EE","AA","AA","GG","CC","AA","DD","AA","EE","CC","GG","CC","AA","AA","GG","CC","GG","EE","CC","AA","GG","EE","CC","AA","EE","CC","AA","GG","GG","BB","CC","GG","DD","CC","GG","CC","EE","GG","EE","GG","EE","EE","AA","AA","GG","EE","AA","CC","GG","CC","GG","AA","AA","EE","CC","GG","GG","CC","BB","EE","GG","AA","GG","AA","GG","CC","EE","CC","EE","GG","CC","CC","EE","GG","GG","GG","CC","AA","DD","GG","AA","GG","CC","EE","AA","EE","AA","AA","EE","EE","AA","EE","EE","AA","GG","CC","AA","BB","AA","AA","GG","EE","GG","AA","AA","EE","GG","GG","GG","AA","GG","AA","GG","EE","AA","EE","CC","EE","CC","GG","CC","CC","GG"]
+    ],
+    "BG2": [
+      ["CC","CC","CC","DD","DD","DD","EE","EE","DD","DD","DD","FF","FF","AA","AA","AA","EE","EE","EE","GG","GG","AA","AA","FF","FF","CC","CC","BB","BB","BB","AA","AA","AA","CC","CC","CC","DD","DD","DD","FF","FF","BB","BB","BB","GG","GG","GG","AA","AA","AA","DD","DD","EE","EE","EE","AA","AA","BB","BB","FF","FF","GG","GG","GG","BB","BB","GG","GG","FF","FF","FF","GG","GG","GG","AA","AA","AA","BB","BB","BB","DD","DD","DD","FF","FF","CC","CC","DD","DD","EE","EE","FF","FF","BB","BB","FF","FF","FF","CC","CC","CC","BB","BB","BB","CC","CC","AA","AA","FF","FF","GG","GG","DD","DD","DD","BB","BB","BB","GG","GG","GG","BB","BB","CC","CC","CC","AA","AA","AA","EE","EE","EE","CC","CC","DD","DD","DD","FF","FF","CC","CC","EE","EE","GG","GG","GG","CC","CC","CC","AA","AA","DD","DD","DD","GG","GG","GG","EE","EE","AA","AA","AA","EE","EE","GG","GG","BB","BB","BB","EE","EE","EE","DD","DD","DD","EE","EE","EE","CC","CC","DD","DD","DD","EE","EE","EE","DD","DD","FF","FF","FF","AA","AA"],
+      ["GG","GG","BB","BB","BB","EE","EE","EE","CC","CC","GG","GG","CC","CC","CC","FF","FF","AA","AA","DD","DD","DD","FF","FF","FF","CC","CC","DD","DD","GG","GG","DD","DD","AA","AA","AA","FF","FF","FF","EE","EE","EE","CC","CC","CC","FF","FF","FF","BB","BB","EE","EE","EE","AA","AA","AA","GG","GG","GG","CC","CC","CC","EE","EE","DD","DD","DD","EE","EE","DD","DD","AA","AA","AA","BB","BB","BB","FF","FF","AA","AA","FF","FF","CC","CC","CC","AA","AA","EE","EE","AA","AA","AA","BB","BB","BB","EE","EE","EE","GG","GG","GG","FF","FF","EE","EE","EE","BB","BB","BB","AA","AA","AA","BB","BB","GG","GG","BB","BB","BB","FF","FF","BB","BB","GG","GG","GG","DD","DD","DD","CC","CC","EE","EE","GG","GG","GG","AA","AA","AA","EE","EE","EE","DD","DD","AA","AA","CC","CC","DD","DD","DD","CC","CC","CC","GG","GG","DD","DD","FF","FF","FF","BB","BB","BB","CC","CC","FF","FF","FF","BB","BB","BB","GG","GG","DD","DD","GG","GG","BB","BB","BB","EE","EE","CC","CC","AA","AA","AA","CC","CC"],
+      ["BB","BB","BB","CC","CC","CC","GG","GG","EE","EE","GG","GG","EE","EE","EE","GG","GG","CC","CC","CC","FF","FF","AA","AA","AA","CC","CC","AA","AA","AA","DD","DD","FF","FF","GG","GG","AA","AA","FF","FF","BB","BB","BB","CC","CC","GG","GG","FF","FF","DD","DD","EE","EE","EE","DD","DD","DD","BB","BB","BB","CC","CC","CC","AA","AA","AA","DD","DD","DD","BB","BB","FF","FF","FF","EE","EE","FF","FF","FF","AA","AA","AA","EE","EE","EE","BB","BB","BB","DD","DD","DD","GG","GG","GG","EE","EE","BB","BB","BB","AA","AA","AA","CC","CC","CC","EE","EE","FF","FF","DD","DD","BB","BB","BB","DD","DD","DD","CC","CC","CC","AA","AA","BB","BB","GG","GG","FF","FF","GG","GG","GG","DD","DD","BB","BB","CC","CC","AA","AA","GG","GG","GG","FF","FF","FF","EE","EE","DD","DD","BB","BB","EE","EE","EE","AA","AA","CC","CC","FF","FF","FF","GG","GG","EE","EE","DD","DD","DD","CC","CC","CC","AA","AA","AA","BB","BB","CC","CC","GG","GG","GG","EE","EE","EE","GG","GG","EE","EE"],
+      ["CC","CC","DD","DD","CC","CC","CC","FF","FF","FF","BB","BB","BB","CC","CC","CC","AA","AA","FF","FF","FF","GG","GG","CC","CC","BB","BB","AA","AA","AA","GG","GG","AA","AA","AA","EE","EE","FF","FF","GG","GG","EE","EE","CC","CC","EE","EE","FF","FF","FF","GG","GG","FF","FF","FF","EE","EE","EE","BB","BB","BB","FF","FF","CC","CC","AA","AA","DD","DD","GG","GG","DD","DD","DD","FF","FF","DD","DD","DD","CC","CC","CC","BB","BB","BB","AA","AA","GG","GG","AA","AA","FF","FF","BB","BB","BB","CC","CC","CC","GG","GG","AA","AA","EE","EE","EE","FF","FF","EE","EE","EE","AA","AA","AA","BB","BB","BB","GG","GG","GG","DD","DD","DD","GG","GG","AA","AA","GG","GG","GG","EE","EE","BB","BB","BB","DD","DD","BB","BB","BB","DD","DD","AA","AA","AA","DD","DD","BB","BB","BB","CC","CC","CC","FF","FF","EE","EE","EE","DD","DD","DD","FF","FF","FF","EE","EE","EE","BB","BB","BB","CC","CC","DD","DD","CC","CC","CC","DD","DD","DD","EE","EE","EE","FF","FF","BB","BB","FF","FF","FF"],
+      ["GG","GG","EE","EE","CC","CC","AA","AA","BB","BB","BB","EE","EE","BB","BB","BB","FF","FF","FF","AA","AA","AA","CC","CC","GG","GG","GG","CC","CC","EE","EE","EE","BB","BB","FF","FF","GG","GG","EE","EE","CC","CC","BB","BB","BB","EE","EE","EE","DD","DD","FF","FF","FF","AA","AA","AA","DD","DD","DD","AA","AA","AA","EE","EE","CC","CC","CC","EE","EE","EE","FF","FF","BB","BB","BB","CC","CC","DD","DD","CC","CC","AA","AA","AA","GG","GG","AA","AA","AA","FF","FF","FF","GG","GG","BB","BB","BB","CC","CC","CC","EE","EE","EE","DD","DD","AA","AA","FF","FF","DD","DD","DD","GG","GG","AA","AA","FF","FF","DD","DD","FF","FF","CC","CC","CC","AA","AA","AA","GG","GG","BB","BB","FF","FF","DD","DD","EE","EE","GG","GG","AA","AA","AA","DD","DD","BB","BB","GG","GG","GG","CC","CC","FF","FF","FF","EE","EE","BB","BB","DD","DD","BB","BB","BB","GG","GG","DD","DD","DD","GG","GG","GG","EE","EE","CC","CC","CC","AA","AA","BB","BB","EE","EE"],
+      ["FF","FF","BB","BB","GG","GG","GG","FF","FF","BB","BB","DD","DD","AA","AA","AA","DD","DD","DD","FF","FF","FF","GG","GG","GG","DD","DD","DD","FF","FF","FF","GG","GG","BB","BB","BB","CC","CC","DD","DD","EE","EE","EE","AA","AA","FF","FF","CC","CC","DD","DD","DD","EE","EE","CC","CC","EE","EE","EE","CC","CC","CC","AA","AA","AA","FF","FF","AA","AA","DD","DD","GG","GG","GG","DD","DD","DD","BB","BB","AA","AA","EE","EE","EE","FF","FF","CC","CC","BB","BB","AA","AA","DD","DD","DD","EE","EE","EE","BB","BB","BB","FF","FF","CC","CC","CC","EE","EE","DD","DD","DD","GG","GG","GG","FF","FF","CC","CC","CC","AA","AA","CC","CC","CC","AA","AA","EE","EE","BB","BB","BB","DD","DD","DD","BB","BB","FF","FF","FF","AA","AA","AA","GG","GG","EE","EE","GG","GG","CC","CC","EE","EE","EE","GG","GG","GG","FF","FF","EE","EE","AA","AA","AA","CC","CC","BB","BB","GG","GG","GG","BB","BB","FF","FF","BB","BB","BB","GG","GG","GG","FF","FF","FF","BB","BB","BB","DD","DD"],
+      ["GG","GG","GG","EE","EE","EE","FF","FF","FF","EE","EE","BB","BB","DD","DD","DD","CC","CC","DD","DD","BB","BB","BB","CC","CC","AA","AA","AA","GG","GG","GG","EE","EE","EE","DD","DD","DD","FF","FF","FF","CC","CC","AA","AA","AA","FF","FF","FF","BB","BB","GG","GG","AA","AA","BB","BB","DD","DD","BB","BB","DD","DD","DD","AA","AA","GG","GG","EE","EE","CC","CC","CC","GG","GG","EE","EE","DD","DD","DD","CC","CC","CC","DD","DD","FF","FF","FF","GG","GG","GG","FF","FF","FF","CC","CC","EE","EE","CC","CC","CC","BB","BB","BB","AA","AA","AA","EE","EE","EE","FF","FF","FF","AA","AA","EE","EE","EE","CC","CC","CC","EE","EE","EE","GG","GG","DD","DD","DD","GG","GG","GG","FF","FF","FF","BB","BB","BB","DD","DD","DD","CC","CC","CC","AA","AA","EE","EE","EE","DD","DD","DD","BB","BB","FF","FF","GG","GG","CC","CC","CC","GG","GG","GG","FF","FF","AA","AA","AA","BB","BB","BB","FF","FF","FF","AA","AA","BB","BB","BB","AA","AA","GG","GG","EE","EE","EE","FF","FF","FF","EE","EE","EE","BB","BB","BB","DD","DD","DD"]
+    ],
+    "BG3": [
+      ["DD","BB","FF","DD","BB","BB","FF","FF","FF","DD","DD","DD","DD","FF","FF","FF","DD","FF","FF","FF","FF","GG","DD","DD","BB","DD","BB","BB","DD","BB","BB","GG","FF","DD","FF","DD","BB","BB","FF","FF","BB","DD","DD","AA","DD","BB","FF","BB","BB","FF","DD","DD","BB","DD","FF","DD","DD","BB","DD","BB","DD","BB","DD","DD","FF","BB","BB","BB","BB","BB","FF","FF","FF","BB","DD","DD","DD","FF","FF","DD","CC","FF","FF","FF","BB","CC","DD","BB","BB","DD","BB","DD","EE","FF","FF","BB","BB","DD","BB","DD","DD","BB","FF","FF","BB","BB","FF","DD","DD","FF","BB","GG","BB","BB","DD","FF","BB","DD","AA","DD","FF","BB","DD","BB","FF","FF","BB","FF","FF","DD","FF","EE","BB","BB","DD","DD","BB","DD","DD","BB","FF","DD","BB","FF","BB","FF","FF","CC","FF","FF","DD","BB","EE","FF","FF","AA","FF","BB","BB","DD","DD","FF","DD","BB","FF","DD","BB","BB"],
+      ["EE","EE","EE","AA","EE","EE","GG","AA","AA","CC","CC","GG","GG","GG","CC","GG","AA","EE","GG","CC","GG","GG","GG","GG","EE","CC","AA","AA","EE","CC","AA","AA","CC","GG","AA","CC","AA","GG","GG","EE","EE","CC","GG","CC","EE","DD","CC","FF","CC","CC","CC","EE","AA","GG","AA","AA","EE","CC","EE","EE","GG","GG","EE","GG","AA","GG","CC","GG","AA","CC","EE","EE","CC","DD","CC","CC","AA","EE","EE","BB","EE","AA","EE","CC","AA","AA","AA","GG","GG","AA","GG","CC","AA","GG","GG","AA","AA","GG","AA","CC","AA","GG","EE","GG","AA","CC","EE","CC","EE","EE","AA","EE","GG","AA","GG","CC","AA","GG","EE","AA","EE","EE","EE","AA","EE","CC","CC","AA","EE","AA","GG","CC","BB","GG","EE","AA","EE","EE","EE","EE","EE","GG","FF","FF","GG","GG","EE","CC","CC","AA","CC","AA","AA","AA","GG","EE","EE","CC","GG","AA","CC","CC","CC","EE","CC","GG","AA","GG","GG","CC","CC","GG","EE","GG","EE","EE","CC","CC","GG","GG","CC","AA","AA","GG","AA","CC","AA","CC","EE","GG","AA","GG","CC","EE","AA","DD","CC","GG","EE","EE","GG","AA","CC","AA","CC","BB","CC","AA","CC","EE","EE","EE","AA","EE","EE"],
+      ["FF","BB","EE","FF","BB","FF","BB","BB","FF","FF","DD","DD","FF","BB","DD","DD","BB","BB","CC","FF","FF","DD","DD","DD","BB","DD","BB","DD","GG","BB","DD","GG","BB","BB","DD","FF","DD","FF","FF","FF","FF","FF","BB","DD","CC","EE","CC","BB","BB","FF","FF","EE","FF","BB","FF","DD","DD","FF","BB","FF","FF","FF","FF","BB","FF","DD","DD","BB","BB","BB","FF","FF","FF","DD","DD","DD","DD","DD","DD","DD","FF","FF","BB","BB","BB","FF","BB","BB","FF","BB","DD","GG","BB","DD","FF","FF","FF","DD","DD","DD","AA","BB","BB","DD","DD","FF","DD","BB","BB","BB","AA","FF","FF","DD","DD","DD","BB","BB","AA","FF","FF","BB","DD","DD","FF","BB","DD","BB","BB","BB","BB","BB","FF","DD","DD","DD","FF","FF","BB","FF","DD","BB","FF","FF","BB","DD","BB","DD","DD","DD","BB","FF","DD","BB","FF","BB","DD","FF","DD","DD","FF","BB","FF","BB","EE","FF","BB","FF"],
+      ["AA","CC","AA","AA","GG","AA","EE","GG","CC","EE","CC","AA","GG","EE","GG","CC","EE","GG","CC","GG","GG","EE","CC","EE","GG","GG","CC","GG","EE","EE","AA","EE","CC","CC","CC","EE","GG","AA","AA","EE","CC","CC","CC","GG","CC","AA","GG","AA","FF","AA","GG","GG","GG","EE","AA","GG","CC","AA","EE","CC","AA","AA","GG","CC","EE","AA","CC","GG","GG","AA","CC","EE","CC","AA","GG","AA","EE","EE","CC","GG","BB","CC","CC","GG","EE","GG","EE","GG","EE","GG","CC","AA","EE","EE","CC","EE","EE","EE","CC","AA","EE","EE","BB","CC","AA","CC","AA","AA","CC","EE","GG","EE","CC","GG","AA","CC","CC","CC","AA","CC","EE","CC","AA","GG","GG","DD","CC","GG","AA","CC","CC","AA","AA","CC","AA","AA","GG","GG","FF","AA","EE","GG","GG","CC","AA","GG","EE","AA","AA","GG","EE","EE","AA","AA","EE","AA","EE","EE","GG","EE","CC","EE","DD","GG","EE","CC","GG","AA","GG","CC","GG","GG","CC","CC","CC","AA","AA","EE","DD","BB","AA","GG","AA","GG","GG","AA","EE","GG","GG","EE","AA","CC","EE","AA","EE","EE","CC","GG","EE","AA","AA","AA","EE","CC","EE","FF","GG","CC","EE","AA","CC","AA","AA","GG","AA"],
+      ["BB","FF","FF","DD","BB","DD","FF","BB","FF","BB","BB","FF","FF","DD","DD","BB","DD","BB","FF","DD","BB","DD","DD","DD","FF","FF","FF","DD","EE","DD","BB","FF","FF","FF","FF","DD","DD","BB","AA","DD","BB","BB","FF","BB","DD","FF","FF","BB","FF","FF","BB","DD","DD","BB","DD","FF","BB","DD","DD","FF","BB","FF","DD","BB","BB","BB","FF","DD","GG","DD","BB","BB","FF","CC","BB","BB","FF","FF","FF","DD","BB","DD","BB","DD","BB","FF","DD","BB","FF","DD","BB","FF","FF","DD","FF","BB","BB","DD","FF","FF","DD","BB","DD","BB","CC","DD","DD","AA","DD","BB","BB","BB","FF","DD","BB","BB","DD","DD","DD","FF","FF","DD","GG","EE","FF","FF","BB","FF","DD","BB","EE","DD","FF","BB","DD","BB","FF","CC","BB","FF","DD","FF","DD","FF","BB","FF","BB","FF","FF","DD","GG","BB","AA","DD","DD","FF","FF","BB","DD","DD","BB","BB","BB","FF","FF","DD","BB","DD"],
+      ["GG","GG","EE","EE","EE","GG","EE","AA","CC","AA","AA","EE","CC","GG","CC","AA","EE","EE","EE","EE","CC","CC","GG","CC","AA","AA","GG","EE","GG","AA","FF","GG","CC","AA","AA","CC","CC","EE","CC","AA","GG","CC","EE","AA","GG","GG","AA","EE","DD","GG","CC","AA","EE","EE","GG","GG","EE","CC","GG","AA","GG","EE","AA","CC","EE","CC","EE","GG","EE","AA","GG","EE","EE","AA","AA","GG","CC","CC","AA","AA","AA","AA","AA","GG","GG","GG","CC","EE","AA","AA","CC","AA","GG","EE","CC","CC","CC","FF","AA","AA","GG","AA","GG","BB","EE","GG","GG","CC","BB","AA","EE","GG","CC","EE","GG","CC","EE","EE","CC","CC","GG","EE","CC","CC","EE","CC","GG","CC","GG","EE","EE","AA","EE","GG","GG","AA","CC","EE","AA","AA","EE","AA","EE","AA","CC","BB","CC","CC","AA","GG","CC","CC","EE","CC","EE","EE","GG","GG","CC","CC","CC","GG","AA","GG","GG","CC","GG","DD","EE","GG","GG","EE","GG","GG","AA","AA","EE","AA","CC","GG","CC","AA","GG","CC","AA","AA","AA","AA","EE","EE","CC","DD","EE","AA","CC","EE","CC","GG","AA","EE","FF","AA","GG","AA","EE","EE","GG","CC","CC","GG","GG","EE","EE","EE","GG"],
+      ["DD","DD","BB","DD","BB","DD","BB","DD","DD","FF","FF","FF","FF","BB","BB","DD","BB","DD","DD","CC","BB","EE","FF","DD","BB","DD","DD","FF","FF","DD","FF","DD","BB","BB","BB","DD","DD","BB","DD","FF","FF","FF","BB","FF","FF","FF","DD","DD","AA","DD","BB","DD","FF","BB","BB","BB","FF","FF","FF","AA","DD","BB","BB","FF","FF","FF","BB","FF","DD","DD","DD","CC","FF","EE","DD","BB","DD","GG","FF","FF","DD","DD","BB","BB","DD","BB","FF","FF","BB","FF","BB","DD","DD","BB","BB","FF","FF","GG","FF","BB","BB","BB","DD","FF","FF","EE","BB","FF","DD","DD","FF","FF","FF","BB","DD","BB","BB","FF","CC","DD","BB","DD","BB","FF","DD","FF","DD","DD","BB","DD","BB","DD"]
+    ],
+    "FG1": [
+      ["BB","BB","BB","EE","EE","BB","BB","BB","AA","AA","AA","EE","EE","BB","BB","AA","AA","FF","FF","DD","DD","DD","FF","FF","FF","AA","AA","AA","GG","GG","GG","AA","AA","FF","FF","FF","BB","BB","BB","DD","DD","DD","AA","AA","GG","GG","GG","AA","AA","CC","CC","DD","DD","FF","FF","FF","CC","CC","DD","DD","EE","EE","EE","GG","GG","GG","FF","FF","FF","CC","CC","CC","GG","GG","GG","BB","BB","DD","DD","BB","BB","EE","EE","FF","FF","CC","CC","AA","AA","AA","CC","CC","CC","DD","DD","DD","GG","GG","EE","EE","BB","BB","EE","EE","FF","FF","FF","BB","BB","BB","CC","CC","CC","DD","DD","GG","GG","GG","CC","CC","CC","FF","FF","FF","DD","DD","CC","CC","CC","BB","BB","SC","SC","BB","BB","GG","GG","GG","FF","FF","FF","CC","CC","EE","EE","EE","GG","GG","GG","CC","CC","AA","AA","AA","EE","EE","GG","GG","EE","EE","EE","AA","AA","AA","FF","FF","FF","EE","EE","EE","AA","AA","DD","DD","DD","DD","DD","DD","GG","GG","BB","BB","BB","EE","EE","BB","BB","AA","AA","AA","EE","EE","EE","BB","BB"],
+      ["DD","DD","FF","FF","FF","EE","EE","GG","GG","EE","EE","EE","CC","CC","CC","EE","EE","AA","AA","CC","CC","FF","FF","GG","GG","GG","DD","DD","DD","CC","CC","CC","BB","BB","BB","AA","AA","AA","FF","FF","CC","CC","CC","DD","DD","DD","BB","BB","BB","DD","DD","DD","GG","GG","AA","AA","AA","EE","EE","GG","GG","BB","BB","BB","GG","GG","GG","BB","BB","FF","FF","AA","AA","FF","FF","FF","DD","DD","BB","BB","EE","EE","EE","GG","GG","GG","FF","FF","FF","CC","CC","CC","EE","EE","BB","BB","BB","AA","AA","AA","BB","BB","BB","AA","AA","GG","GG","AA","AA","AA","CC","CC","AA","AA","DD","DD","DD","EE","EE","EE","BB","BB","GG","GG","DD","DD","DD","CC","CC","CC","EE","EE","EE","CC","CC","AA","AA","EE","EE","GG","GG","GG","DD","DD","DD","FF","FF","EE","EE","DD","DD","DD","AA","AA","AA","CC","CC","FF","FF","FF","DD","DD","DD","FF","FF","BB","BB","CC","CC","FF","FF","FF","BB","BB","GG","GG","DD","DD","DD","CC","CC","EE","EE","EE","GG","GG","GG","EE","EE","CC","CC"],
+      ["EE","EE","CC","CC","CC","DD","DD","BB","BB","BB","EE","EE","GG","GG","GG","FF","FF","DD","DD","DD","EE","EE","GG","GG","DD","DD","AA","AA","FF","FF","EE","EE","EE","CC","CC","GG","GG","FF","FF","EE","EE","CC","CC","CC","GG","GG","GG","AA","AA","AA","GG","GG","GG","EE","EE","EE","FF","FF","FF","EE","EE","CC","CC","CC","AA","AA","BB","BB","BB","FF","FF","FF","AA","AA","AA","CC","CC","CC","DD","DD","DD","GG","GG","GG","AA","AA","BB","BB","BB","FF","FF","FF","AA","AA","AA","CC","CC","BB","BB","DD","DD","GG","GG","GG","BB","BB","BB","EE","EE","EE","FF","FF","AA","AA","CC","CC","DD","DD","GG","GG","GG","DD","DD","FF","FF","GG","GG","BB","BB","AA","AA","AA","DD","DD","DD","BB","BB","EE","EE","CC","CC","AA","AA","AA","FF","FF","BB","BB","DD","DD","DD","AA","AA","BB","BB","EE","EE","EE","CC","CC","CC","BB","BB","BB","GG","GG","DD","DD","CC","CC","CC","FF","FF","FF","EE","EE","CC","CC","DD","DD","BB","BB","EE","EE","EE","GG","GG","GG"],
+      ["FF","FF","FF","GG","GG","GG","EE","EE","FF","FF","FF","GG","GG","DD","DD","CC","CC","FF","FF","FF","SC","SC","FF","FF","FF","CC","CC","AA","AA","FF","FF","GG","GG","AA","AA","BB","BB","GG","GG","GG","EE","EE","CC","CC","CC","BB","BB","BB","GG","GG","GG","FF","FF","AA","AA","EE","EE","BB","BB","CC","CC","BB","BB","BB","CC","CC","EE","EE","EE","AA","AA","AA","CC","CC","CC","BB","BB","EE","EE","GG","GG","EE","EE","FF","FF","FF","DD","DD","DD","AA","AA","DD","DD","AA","AA","AA","DD","DD","GG","GG","GG","FF","FF","FF","GG","GG","GG","AA","AA","AA","EE","EE","EE","BB","BB","DD","DD","AA","AA","AA","FF","FF","AA","AA","AA","DD","DD","GG","GG","GG","BB","BB","CC","CC","CC","EE","EE","CC","CC","CC","DD","DD","DD","BB","BB","DD","DD","DD","AA","AA","AA","DD","DD","DD","BB","BB","BB","CC","CC","CC","FF","FF","EE","EE","DD","DD","DD","EE","EE","EE","CC","CC","CC","GG","GG","BB","BB","FF","FF","FF","GG","GG","EE","EE","FF","FF","GG","GG","CC","CC","CC"],
+      ["CC","CC","AA","AA","AA","DD","DD","DD","GG","GG","GG","AA","AA","FF","FF","FF","BB","BB","FF","FF","FF","CC","CC","EE","EE","CC","CC","EE","EE","BB","BB","EE","EE","EE","FF","FF","FF","CC","CC","EE","EE","EE","AA","AA","AA","FF","FF","FF","BB","BB","BB","FF","FF","BB","BB","BB","GG","GG","GG","EE","EE","AA","AA","AA","GG","GG","FF","FF","EE","EE","CC","CC","CC","DD","DD","AA","AA","AA","BB","BB","BB","CC","CC","EE","EE","EE","GG","GG","GG","AA","AA","AA","GG","GG","FF","FF","EE","EE","CC","CC","CC","EE","EE","DD","DD","BB","BB","GG","GG","DD","DD","CC","CC","CC","AA","AA","AA","FF","FF","AA","AA","BB","BB","DD","DD","EE","EE","AA","AA","DD","DD","DD","CC","CC","DD","DD","GG","GG","GG","BB","BB","FF","FF","FF","DD","DD","FF","FF","GG","GG","AA","AA","AA","DD","DD","BB","BB","BB","GG","GG","GG","CC","CC","BB","BB","BB","GG","GG","DD","DD","FF","FF","AA","AA","DD","DD","GG","GG","GG","AA","AA","FF","FF"],
+      ["GG","GG","DD","DD","DD","CC","CC","CC","EE","EE","EE","AA","AA","AA","FF","FF","FF","DD","DD","DD","GG","GG","DD","DD","DD","GG","GG","CC","CC","EE","EE","EE","GG","GG","FF","FF","AA","AA","FF","FF","FF","BB","BB","CC","CC","FF","FF","FF","AA","AA","AA","DD","DD","DD","CC","CC","DD","DD","FF","FF","BB","BB","BB","CC","CC","CC","EE","EE","AA","AA","DD","DD","DD","GG","GG","FF","FF","BB","BB","FF","FF","BB","BB","BB","AA","AA","AA","EE","EE","EE","GG","GG","AA","AA","AA","DD","DD","BB","BB","BB","CC","CC","CC","DD","DD","GG","GG","GG","AA","AA","GG","GG","GG","CC","CC","EE","EE","DD","DD","DD","FF","FF","FF","EE","EE","BB","BB","BB","DD","DD","DD","GG","GG","CC","CC","BB","BB","EE","EE","GG","GG","GG","AA","AA","AA","FF","FF","EE","EE","CC","CC","CC","EE","EE","BB","BB","GG","GG","GG","BB","BB","FF","FF","EE","EE","EE","AA","AA","AA","CC","CC","CC","BB","BB","BB","GG","GG","CC","CC","CC","DD","DD","DD","AA","AA","AA","GG","GG","EE","EE"],
+      ["EE","EE","EE","GG","GG","DD","DD","EE","EE","EE","CC","CC","BB","BB","BB","CC","CC","CC","AA","AA","AA","DD","DD","DD","FF","FF","FF","GG","GG","CC","CC","CC","BB","BB","BB","DD","DD","AA","AA","DD","DD","EE","EE","GG","GG","CC","CC","AA","AA","AA","BB","BB","CC","CC","GG","GG","FF","FF","FF","EE","EE","FF","FF","AA","AA","AA","DD","DD","DD","AA","AA","GG","GG","GG","DD","DD","DD","EE","EE","EE","BB","BB","FF","FF","DD","DD","DD","GG","GG","GG","CC","CC","CC","GG","GG","GG","EE","EE","EE","BB","BB","FF","FF","FF","SC","SC","SC","DD","DD","DD","FF","FF","CC","CC","CC","BB","BB","BB","EE","EE","EE","GG","GG","GG","FF","FF","FF","CC","CC","CC","FF","FF","EE","EE","EE","AA","AA","AA","BB","BB","DD","DD","CC","CC","AA","AA","AA","GG","GG","GG","FF","FF","EE","EE","EE","AA","AA","AA","BB","BB","BB","CC","CC","BB","BB","BB","EE","EE","FF","FF","GG","GG","GG","AA","AA","AA","BB","BB","BB","DD","DD","DD","AA","AA","AA","EE","EE","EE","GG","GG","DD","DD","DD","EE","EE","CC","CC","EE","EE"]
+    ]
+  }
+}

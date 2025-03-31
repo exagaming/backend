@@ -1,0 +1,309 @@
+{
+  "line": 10,
+  "row":3,
+  "column":5,
+  "rptList": [96,94,92],
+  "payDirection": {
+    "leftToRight":1,
+    "rightToLeft":2
+  },
+  "symbols": [
+    "H1",
+    "H2",
+    "H3",
+    "L1",
+    "L2",
+    "L3",
+    "L4",
+    "WILD",
+    "SCATTER"
+  ],
+  "specialSymbol" : {
+    "WILD": "WILD",
+    "SCATTER": "SCATTER",
+    "EXIT":"EXIT"
+  },
+  "symbolIdMap": {
+    "H1": 201,
+    "H2": 202,
+    "H3": 203,
+    "L1": 101,
+    "L2": 102,
+    "L3": 103,
+    "L4": 104,
+    "WILD": 80,
+    "SCATTER": 25,
+    "EXIT": 1
+  },
+  "symbolMultiplier": {
+    "WILD": {
+      "5": 1000,
+      "4": 100,
+      "3": 20
+    },
+    "H1": {
+      "5": 1000,
+      "4": 100,
+      "3": 20
+    },
+    "H2": {
+      "5": 100,
+      "4": 10,
+      "3": 3
+    },
+    "H3": {
+      "5": 30,
+      "4": 5,
+      "3": 2
+    },
+    "L1": {
+      "5": 15,
+      "4": 4,
+      "3": 1
+    },
+    "L2": {
+      "5": 10,
+      "4": 3,
+      "3": 0.75
+    },
+    "L3": {
+      "5": 7.5,
+      "4": 2,
+      "3": 0.6
+    },
+    "L4": {
+      "5": 5,
+      "4": 1.25,
+      "3": 0.5
+    }
+  },
+  "patterns": {
+    "1": [0,1,2,3,4],
+    "2": [5,6,7,8,9],
+    "3": [10,11,12,13,14],
+    "4": [0,6,12,8,4],
+    "5": [10,6,2,8,14],
+    "6": [0,1,7,13,14],
+    "7": [10,11,7,3,4],
+    "8": [5,1,2,3,9],
+    "9": [0,6,7,8,4],
+    "10": [5,11,12,13,9]
+  },
+  "baseGameReelWeights": {
+    "A":0.2785,
+    "B":0.7215
+  },
+  "reels": {
+    "A" : [
+      ["L3", "L4", "L2", "L4", "L4", "L1","L2", "L3", "L1", "L2", "L2", "L4","L1", "L3", "L2", "L4", "L3", "L2","L4", "H3", "L3", "H1", "L4", "L3","L3", "H3", "L2", "L4", "L1", "WILD","L4", "L1", "L2", "L1", "L4", "L1","L3", "L3", "L4", "L1", "H2", "L2","H1", "L4", "H2", "L3", "H3", "L1","L2", "L3", "L1", "L3"],
+      ["L3", "L4",  "L2", "L4", "L4", "L1","L2", "L3",  "L1", "L2", "L2", "L4","L1", "L3",  "L2", "L4", "L3", "L2","L4", "H3",  "L3", "H1", "L4", "L3","L3", "H3",  "L2", "L4", "L1", "L4","L1", "WILD", "L2", "L1", "L4", "L1","L3", "L3",  "L4", "L1", "H2", "L2","H1", "L4",  "H2", "L3", "H3", "L1","L2", "L3",  "L1", "L3"],
+      ["L3", "L4", "L2", "L4", "L4", "L1","L2", "L3", "L1", "L2", "L2", "L4","L1", "L3", "L2", "L4", "L3", "L2","L4", "H3", "L3", "H1", "L4", "L3","L3", "H3", "L2", "L4", "L1", "L4","L1", "L2", "L1", "L4", "L1", "WILD","L3", "L3", "L4", "L1", "H2", "L2","H1", "L4", "H2", "L3", "H3", "L1","L2", "L3", "L1", "L3"],
+      ["H1", "L3",  "L1", "L3", "H3","L4", "L1",  "L3", "L2", "L1","H3", "L1",  "L4", "L2", "L3","L1", "L4",  "L3", "L1", "L3","H2", "L4",  "H1", "L1", "L4","H1", "L4",  "L2", "L1", "L4","H3", "H1",  "L3", "L4", "H3","L2", "H1",  "L1", "H3", "H2","H3", "WILD", "L3", "H1", "H1","L1"],
+      ["H1", "L3", "L1",  "L3", "H3","L4", "L1", "L3",  "L2", "L1","H3", "L1", "L4",  "L2", "L3","L1", "L4", "L3",  "L1", "L3","H2", "L4", "H1",  "L1", "L4","H1", "L4", "L2",  "L1", "L4","H3", "H1", "WILD", "L3", "L4","H3", "L2", "H1",  "L1", "H3","H2", "H3", "L3",  "H1", "H1","L1"]
+    ]
+    ,
+    "B": [
+      ["L4","L2","L4","L4","L2","L2","L2","L4","L2","L4","L2","L4","H3","H1","L4","H3","L2","L4","L4","L2","L4","L4","L2","H1","L4","H3","L2"],
+      ["L3","L1","L3","L1","L1","L3","L3","H2","L3","H2","L3","L3","L1","L1","L1","L1","L3","L3","L1","H2","L3","L1","L3","L1","L3"],
+      ["L4","L2","L4","L4","L2","L2","L2","L4","L2","L4","L2","L4","H3","H1","L4","H3","L2","L4","L4","L2","L4","L4","L2","H1","L4","H3","L2"],
+      ["L3","L1","L3","L1","L1","L3","L3","H2","L3","H2","L3","L3","L1","L1","L1","L1","L3","L3","L1","H2","L3","L1","L3","L1","L3"],
+      ["L4","L2","L4","L4","L2","L2","L2","L4","L2","L4","L2","L4","H3","H1","L4","H3","L2","L4","L4","L2","L4","L4","L2","H1","L4","H3","L2"]
+    ]
+  },
+  "freeGameDefaultGlobalMultiplier": 1,
+  "freeGameTriggerProbability": {
+    "96" : {
+      "3":6785714,
+      "4":214286,
+      "5":142857,
+      "0":993571429
+    },
+    "94": {
+      "3" : 64625850340,
+      "4" : 2040816327,
+      "5" : 1360544218,
+      "0" : 9938775510205
+    },
+    "92": {
+      "3": 61688311690,
+      "4": 1948051948,
+      "5": 1298701299,
+      "0": 9941558441557
+    }
+  },
+  "freeGamePayouts": {
+    "H1": {
+      "1": 50,
+      "2": 150,
+      "3": 500
+    },
+   "H2":{
+      "1": 30,
+      "2": 90,
+      "3": 300
+    },
+   "H3":{
+      "1": 20,
+      "2": 60,
+      "3": 200
+    },
+   "L1":{
+      "1": 10,
+      "2": 30,
+      "3": 100
+    },
+   "L2":{
+      "1": 5,
+      "2": 15,
+      "3": 50
+    },
+   "L3":{
+      "1": 3,
+      "2": 9,
+      "3": 30
+    },
+   "L4":{
+      "1": 2,
+      "2": 6,
+      "3": 20
+    }
+  },
+  "freeGameStartExitProbability" :{
+    "3" :	0.05,
+    "4" :	0.05,
+    "5" :	0.05
+  },
+  "freeGameStopExitProbability" :{
+    "3" :	0.75,
+    "4" :	0.9,
+    "5" :	0.75
+  },
+  "freeGameWinningSymbolWeights":{
+    "H1": 1,
+    "H2": 5,
+    "H3": 5,
+    "L1": 100,
+    "L2": 100,
+    "L3": 450,
+    "L4": 450
+  },
+  "freeGameMiniReelWeights":{
+    "H1":5,
+    "H2":10,
+    "H3":10,
+    "L1":100,
+    "L2":100,
+    "L3":200,
+    "L4":200
+  },
+  "freeGameNumberOfSpinsToChangeExitProbability" :{
+    "3":10,
+    "4":12,
+    "5":15
+  },
+  "freeGameDoubleGlobalMultiplierInterval": 4,
+  "buyFreeSpin": {
+    "3": {
+      "baseBuyAmount": 60,
+      "freeGameWinningSymbolWeights":{
+        "H1": 1,
+        "H2": 5,
+        "H3": 5,
+        "L1": 100,
+        "L2": 100,
+        "L3": 450,
+        "L4": 450
+      },
+      "freeGameMiniReelWeights":{
+        "H1":5,
+        "H2":10,
+        "H3":10,
+        "L1":100,
+        "L2":100,
+        "L3":200,
+        "L4":200
+      },
+      "exitRTP": {
+        "96": {
+          "freeGameStartExitProbability": 0.061
+        },
+        "94": {
+          "freeGameStartExitProbability": 0.064
+        },
+        "92": {
+          "freeGameStartExitProbability": 0.0665
+        },
+        "freeGameStopExitProbability": 0.76,
+        "freeGameNumberOfSpinsToChangeExitProbability": 10
+      }
+    },
+    "4": {
+      "baseBuyAmount": 200,
+      "freeGameWinningSymbolWeights":{
+        "H1": 5,
+        "H2": 25,
+        "H3": 25,
+        "L1": 100,
+        "L2": 100,
+        "L3": 400,
+        "L4": 400
+      },
+      "freeGameMiniReelWeights":{
+        "H1":5,
+        "H2":20,
+        "H3":20,
+        "L1":100,
+        "L2":100,
+        "L3":250,
+        "L4":250
+      },
+      "exitRTP": {
+        "96": {
+          "freeGameStartExitProbability": 0.069
+        },
+        "94": {
+          "freeGameStartExitProbability": 0.0703
+        },
+        "92": {
+          "freeGameStartExitProbability": 0.0717
+        },
+        "freeGameStopExitProbability": 0.805,
+        "freeGameNumberOfSpinsToChangeExitProbability": 20
+      }
+    },
+    "5":  {
+      "baseBuyAmount": 600,
+      "freeGameWinningSymbolWeights":{
+        "H1": 5,
+        "H2": 25,
+        "H3": 25,
+        "L1": 100,
+        "L2": 100,
+        "L3": 400,
+        "L4": 400
+      },
+      "freeGameMiniReelWeights":{
+        "H1":5,
+        "H2":20,
+        "H3":20,
+        "L1":100,
+        "L2":100,
+        "L3":250,
+        "L4":250
+      },
+      "exitRTP": {
+        "96": {
+          "freeGameStartExitProbability": 0.0429
+        },
+        "94": {
+          "freeGameStartExitProbability": 0.04375
+        },
+        "92": {
+          "freeGameStartExitProbability": 0.045
+        },
+        "freeGameStopExitProbability": 0.8,
+        "freeGameNumberOfSpinsToChangeExitProbability": 25
+      }
+    }
+  }
+}

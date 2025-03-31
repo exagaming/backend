@@ -1,0 +1,506 @@
+import crypto from 'crypto'
+import { BET_TYPES_CODE } from './constants'
+import { ANTE_BASE_GAME_CASCADING_REEL_CONFIGURATION, ANTE_FREE_GAME_CASCADING_REEL_CONFIGURATION, ANTE_FREE_GAME_MULTIPLIERS_WEIGHT_TABLE, ANTE_REEL_SYMBOL_COMBINATION_PAYOUT, CASCADING_REEL_CONFIGURATION, FREE_GAME_CASCADING_REEL_CONFIGURATION, FREE_GAME_MULTIPLIERS_WEIGHT_TABLE, FREE_SPINS_AWARDED, MULTIPLIER_WEIGHT_TABLE, REEL_SYMBOLS, REEL_SYMBOLS_KEYS, REEL_SYMBOL_COMBINATION_PAYOUT, REEL_SYMBOL_ID, REEL_SYMBOL_ID_REVERSE_MAP } from './slotConfigs'
+
+export const generateRandomDecimal = ({
+  clientSeed,
+  serverSeed,
+  maxNumber
+}) => {
+  const nBits = 32 // number of most significant bits to use
+
+  const hmac = crypto.createHmac('sha256', serverSeed)
+  hmac.update(`${clientSeed}`)
+
+  let seed = hmac.digest('hex')
+  seed = seed.slice(0, nBits / 4) // For more variability we are using 16 bits
+
+  const decimalNumber = parseInt(seed, 16)
+
+  const probability = decimalNumber / Math.pow(2, nBits) // uniformly distributed in [0; 1)
+
+  const number = probability * maxNumber // Number will be generated in [0,maxNumber)
+
+  return number
+}
+
+export const generateRandomNumber = ({
+  clientSeed,
+  serverSeed,
+  maxNumber
+}) => {
+  const decimal = generateRandomDecimal({
+    clientSeed,
+    serverSeed,
+    maxNumber
+  })
+  return parseInt(decimal) + 1 // Number will be generated in [1, maxNumber]
+}
+
+export const getRandomGenerationUsingWeightTable = ({
+  weightTable,
+  clientSeed,
+  serverSeed
+}) => {
+  const keys = Object.keys(weightTable)
+  const weights = Object.values(weightTable).map(k => +k)
+  let totalWeight = 0
+
+  let cumulativeWeights = [...weights]
+
+  for (let i = 0; i < weights.length; i++) {
+    totalWeight += weights[i]
+    if (i > 0) {
+      cumulativeWeights[i] += cumulativeWeights[i - 1]
+    }
+  }
+  cumulativeWeights = cumulativeWeights.map(weight => weight / totalWeight)
+  const samplingNumber = generateRandomDecimal({
+    clientSeed,
+    serverSeed,
+    maxNumber: 1
+  })
+  const index = cumulativeWeights.findIndex(weight => samplingNumber < weight)
+
+  return keys[index === -1 ? 0 : index]
+}
+
+export const getRandSymReplacingPayWindow = ({
+  payWindow,
+  map,
+  clientSeed,
+  serverSeed
+}) => {
+  const onlyValueSymbols = [...REEL_SYMBOLS].filter(symbol => (symbol !== REEL_SYMBOLS_KEYS.MULT && symbol !== REEL_SYMBOLS_KEYS.SCATTER))
+
+  const weightTable = {}
+
+  for (const i of onlyValueSymbols) {
+    const ct = map.get(i) ?? 0
+    if (ct > 0) {
+      weightTable[i] = ct
+    }
+  }
+
+  let _newPayWindow
+
+  if (Object.keys(weightTable).length > 0) {
+    _newPayWindow = payWindow.map((reel, i) => {
+      return reel.map((symbol, j) => {
+        if (symbol === REEL_SYMBOLS_KEYS.RANDSYM) {
+          const generatedSymbol = getRandomGenerationUsingWeightTable({
+            weightTable,
+            clientSeed: `${clientSeed}-${i + 1}-${j + 1}`,
+            serverSeed
+          })
+          return generatedSymbol
+        }
+        return symbol
+      })
+    })
+  } else {
+    _newPayWindow = payWindow.map((reel, i) => {
+      return reel.map((symbol, j) => {
+        if (symbol === REEL_SYMBOLS_KEYS.RANDSYM) {
+          const index = Math.floor((Math.random() * onlyValueSymbols.length))
+          const generatedSymbol = onlyValueSymbols[index]
+          return generatedSymbol
+        }
+        return symbol
+      })
+    })
+  }
+
+  return _newPayWindow
+}
+
+export const generateReelSymbolOccurrenceMapByPayWindow = (payWindow) => {
+  const map = new Map()
+
+  for (const reel of payWindow) {
+    for (const elem of reel) {
+      if (map.has(elem)) {
+        map.set(elem, map.get(elem) + 1)
+      } else {
+        map.set(elem, 1)
+      }
+    }
+  }
+
+  return map
+}
+
+export const generateCascadingReelElements = ({
+  reelNo,
+  elementsToBeAdded,
+  clientSeed,
+  serverSeed,
+  isAnteBet
+}) => {
+  const reelConfiguration = isAnteBet ? ANTE_BASE_GAME_CASCADING_REEL_CONFIGURATION : CASCADING_REEL_CONFIGURATION
+  const CASCADING_REEL = reelConfiguration[`REEL_${reelNo}`].reel_sequence
+  const CASCADING_REEL_LENGTH = CASCADING_REEL.length
+  // INFO: Number will be generated between [1, CASCADING_REEL_LENGTH]
+  const rand = generateRandomNumber({
+    clientSeed: `${clientSeed}-cascading-reel-index-generation`,
+    serverSeed,
+    maxNumber: CASCADING_REEL_LENGTH
+  })
+
+  const _cascadingElements = []
+
+  for (let j = 0; j < elementsToBeAdded; j++) {
+    const index = (((rand + j - 1) + (CASCADING_REEL_LENGTH - elementsToBeAdded)) % CASCADING_REEL_LENGTH)
+    const _cascadingElement = CASCADING_REEL[index]
+    _cascadingElements.push(_cascadingElement)
+  }
+
+  return _cascadingElements
+}
+
+export const convertPayWindowToString = (payWindow, multiplierArray) => {
+  const _multiplierArray = [...multiplierArray]
+  return payWindow.map(row => {
+    return row.map(symbol => {
+      if (symbol === REEL_SYMBOLS_KEYS.MULT && _multiplierArray.length > 0) {
+        return `${1000 + (+_multiplierArray.pop())}`
+      } else if (+symbol >= 1000) {
+        return symbol
+      }
+      return REEL_SYMBOL_ID[symbol]
+    })
+  }).map(row => row.join(',')).join('|')
+}
+
+export const convertStringToPayWindow = (string) => {
+  const reels = string?.split('|')
+  const _payWindow = reels.map(reel => {
+    return reel?.split(',')
+  })
+  return _payWindow.map(reel => {
+    return reel.map(symbolId => {
+      if (symbolId >= 1000) {
+        return symbolId
+      }
+      return REEL_SYMBOL_ID_REVERSE_MAP[symbolId]
+    })
+  })
+}
+
+export const getTotalMultiplierFromPayWindow = (payWindow, multiplierArray) => {
+  let netMultiplier = 0
+
+  payWindow.forEach((reel) => {
+    netMultiplier += reel.reduce((acc, cv) => {
+      if (cv > 1000) {
+        return acc + cv % 1000
+      }
+      return acc
+    }, 0)
+  })
+
+  multiplierArray.forEach((ele) => {
+    netMultiplier += +ele
+  })
+
+  return netMultiplier === 0 ? 1 : netMultiplier
+}
+
+export const getResultThroughPayWindowSymbolOccurrence = ({
+  payWindow,
+  whichReelForMultiplier,
+  type,
+  clientSeed,
+  serverSeed,
+  isAnteBet
+}) => {
+  const symbolOccurrenceMap = generateReelSymbolOccurrenceMapByPayWindow(payWindow)
+  const reelSymbols = [...REEL_SYMBOLS]
+
+  let netMultiplier = 0
+
+  let winningPayout = 0
+  const winningSymbol = []
+
+  const multiplierArray = []
+
+  let isCascading = false
+  const cascadingSymbols = []
+  let totalFreeSpinsAwarded = 0
+
+  const payoutTable = isAnteBet ? ANTE_REEL_SYMBOL_COMBINATION_PAYOUT : REEL_SYMBOL_COMBINATION_PAYOUT
+
+  for (const elem of reelSymbols) {
+    const count = symbolOccurrenceMap.get(elem)
+    if (elem !== REEL_SYMBOLS_KEYS.SCATTER && elem !== REEL_SYMBOLS_KEYS.MULT) {
+      if (count >= 8) {
+        const _payout = payoutTable[elem][count >= 12 ? 12 : count]
+        winningPayout += _payout
+        winningSymbol.push({
+          sym: elem,
+          ct: count
+        })
+        isCascading = true
+        cascadingSymbols.push(elem)
+      }
+    } else {
+      if (type === BET_TYPES_CODE.BASE) {
+        if (elem === REEL_SYMBOLS_KEYS.SCATTER && count >= 4) {
+          // totalFreeSpinsAwarded = FREE_SPINS_AWARDED.SCATTER[count > 6 ? 6 : count]
+          totalFreeSpinsAwarded = FREE_SPINS_AWARDED.SCATTER[4]
+          const _payout = payoutTable[elem][count > 4 ? 3 : count]
+          winningPayout += _payout
+          winningSymbol.push({
+            sym: elem,
+            ct: count
+          })
+        }
+      }
+      if (elem === REEL_SYMBOLS_KEYS.MULT && count >= 1) {
+        const multiplierWeightTable = MULTIPLIER_WEIGHT_TABLE[whichReelForMultiplier]
+
+        let multiplier = 0
+
+        for (let iteration = 0; iteration < count; iteration++) {
+          const randomMultiplier = getRandomGenerationUsingWeightTable({
+            weightTable: multiplierWeightTable,
+            clientSeed: `${clientSeed}-multiplier-generation-${type}-${iteration + 1}`,
+            serverSeed
+          })
+          multiplierArray.push(+randomMultiplier)
+          multiplier += (+randomMultiplier)
+        }
+
+        netMultiplier += multiplier
+      }
+    }
+  }
+
+  return {
+    winningPayout,
+    isCascading,
+    cascadingSymbols,
+    netMultiplier: (netMultiplier === 0 ? 1 : netMultiplier),
+    symbolOccurrenceMap,
+    winningSymbol,
+    multiplierArray,
+    totalFreeSpinsAwarded
+  }
+}
+
+// Free game helpers
+export const getFreeGameRandSymReplacingPayWindowReels = ({
+  payWindow,
+  map,
+  clientSeed,
+  serverSeed
+}) => {
+  const onlyValueSymbols = [...REEL_SYMBOLS].filter(symbol => (symbol !== REEL_SYMBOLS_KEYS.MULT && symbol !== REEL_SYMBOLS_KEYS.SCATTER))
+
+  const weightTable = {}
+
+  for (const i of onlyValueSymbols) {
+    const ct = map.get(i) ?? 0
+    if (ct > 0) {
+      weightTable[i] = ct
+    }
+  }
+
+  let _newPayWindow
+
+  if (Object.keys(weightTable).length > 0) {
+    _newPayWindow = payWindow.map((reel, i) => {
+      return reel.map((symbol, j) => {
+        if (symbol === REEL_SYMBOLS_KEYS.RANDSYM) {
+          const generatedSymbol = getRandomGenerationUsingWeightTable({
+            weightTable,
+            clientSeed: `${clientSeed}-${i + 1}-${j + 1}`,
+            serverSeed
+          })
+          return generatedSymbol
+        }
+        return symbol
+      })
+    })
+  } else {
+    _newPayWindow = payWindow.map((reel, i) => {
+      return reel.map((symbol, j) => {
+        if (symbol === REEL_SYMBOLS_KEYS.RANDSYM) {
+          const index = Math.floor((Math.random() * onlyValueSymbols.length))
+          const generatedSymbol = onlyValueSymbols[index]
+          return generatedSymbol
+        }
+        return symbol
+      })
+    })
+  }
+
+  return _newPayWindow
+}
+
+export const getFreeGameResultThroughPayWindowSymbolOccurrence = ({
+  whichReelForMultiplier,
+  clientSeed,
+  serverSeed,
+  symbolOccurrenceMap,
+  isBuyFreeSpin,
+  isAnteBet
+}) => {
+  const reelSymbols = [...REEL_SYMBOLS]
+
+  let netMultiplier = 0
+
+  let winningPayout = 0
+  const winningSymbol = []
+
+  const multiplierArray = []
+
+  let isCascading = false
+  const cascadingSymbols = []
+
+  const payoutTable = isAnteBet ? ANTE_REEL_SYMBOL_COMBINATION_PAYOUT : REEL_SYMBOL_COMBINATION_PAYOUT
+
+  for (const elem of reelSymbols) {
+    const count = symbolOccurrenceMap.get(elem)
+    if (elem !== REEL_SYMBOLS_KEYS.SCATTER && elem !== REEL_SYMBOLS_KEYS.MULT) {
+      if (count >= 8) {
+        const _payout = payoutTable[elem][count >= 12 ? 12 : count]
+        winningPayout += _payout
+        winningSymbol.push({
+          sym: elem,
+          ct: count
+        })
+        isCascading = true
+        cascadingSymbols.push(elem)
+      }
+    } else {
+      // INFO: We have included this check, but it won't be triggered
+      if (elem === REEL_SYMBOLS_KEYS.SCATTER && count >= 4) {
+        const _payout = payoutTable[elem][count > 6 ? 6 : count]
+        winningPayout += _payout
+        winningSymbol.push({
+          sym: elem,
+          ct: count
+        })
+      }
+      if (elem === REEL_SYMBOLS_KEYS.MULT && count >= 1) {
+        const weightTableForMultipliers = isBuyFreeSpin ? ANTE_FREE_GAME_MULTIPLIERS_WEIGHT_TABLE : FREE_GAME_MULTIPLIERS_WEIGHT_TABLE
+        const multiplierWeightTable = weightTableForMultipliers[whichReelForMultiplier]
+
+        let multiplier = 0
+
+        for (let iteration = 0; iteration < count; iteration++) {
+          const randomMultiplier = getRandomGenerationUsingWeightTable({
+            weightTable: multiplierWeightTable,
+            clientSeed: `${clientSeed}-multiplier-generation-${iteration + 1}`,
+            serverSeed
+          })
+          multiplierArray.push(+randomMultiplier)
+          multiplier += (+randomMultiplier)
+        }
+
+        netMultiplier += multiplier
+      }
+    }
+  }
+
+  return {
+    winningPayout,
+    isCascading,
+    cascadingSymbols,
+    netMultiplier: (netMultiplier === 0 ? 1 : netMultiplier),
+    winningSymbol,
+    multiplierArray,
+    symbolOccurrenceMap
+  }
+}
+
+export const generateFreeGameCascadingReelElements = ({
+  reelNo,
+  elementsToBeAdded,
+  clientSeed,
+  serverSeed,
+  isBuyFreeSpin
+}) => {
+  const configuration = isBuyFreeSpin ? ANTE_FREE_GAME_CASCADING_REEL_CONFIGURATION : FREE_GAME_CASCADING_REEL_CONFIGURATION
+  const CASCADING_REEL = configuration[`REEL_${reelNo}`].reel_sequence
+  const CASCADING_REEL_LENGTH = CASCADING_REEL.length
+  // INFO: Number will be generated between [1, CASCADING_REEL_LENGTH]
+  const rand = generateRandomNumber({
+    clientSeed: `${clientSeed}-cascading`,
+    serverSeed,
+    maxNumber: CASCADING_REEL_LENGTH
+  })
+
+  const _cascadingElements = []
+
+  for (let j = 0; j < elementsToBeAdded; j++) {
+    const index = ((rand + j - 1 + (CASCADING_REEL_LENGTH - elementsToBeAdded)) % CASCADING_REEL_LENGTH)
+    const _cascadingElement = CASCADING_REEL[index]
+    _cascadingElements.push(_cascadingElement)
+  }
+
+  return _cascadingElements
+}
+
+export const getAccumulatedMultiplier = (data) => {
+  let accumulatedMultiplier = 0
+  for (const i of data) {
+    const eachFreeSpinStat = i.reduce((acc, cv) => {
+      return {
+        openedPayout: acc.openedPayout + cv.openedPayout,
+        openedMultiplier: acc.openedMultiplier + (cv.openedMultiplier === 1 ? 0 : cv.openedMultiplier)
+      }
+    }, {
+      openedPayout: 0,
+      openedMultiplier: 0
+    })
+    if (eachFreeSpinStat.openedPayout > 0 && eachFreeSpinStat.openedMultiplier > 1) {
+      accumulatedMultiplier += eachFreeSpinStat.openedMultiplier
+    }
+  }
+
+  return accumulatedMultiplier
+}
+
+export const getAccumulatedPayout = (data) => {
+  return data.reduce((total, subList) => {
+    return total + subList.reduce((subTotal, item) => {
+      return subTotal + item.openedPayout
+    }, 0)
+  }, 0)
+}
+
+export const shufflePayWindow = ({
+  payWindow,
+  clientSeed,
+  serverSeed
+}) => {
+  const _copyPayWindow = payWindow.map(reel => [...reel])
+
+  // Shuffle rows
+  for (let i = _copyPayWindow.length - 1; i > 0; i--) {
+    const randNoBetween0and1 = generateRandomDecimal({
+      clientSeed: `${clientSeed}-generate-random-number-for-row-shuffling-${i}`,
+      serverSeed,
+      maxNumber: 1
+    })
+    const j = Math.floor(randNoBetween0and1 * (i + 1))
+    ;[_copyPayWindow[i], _copyPayWindow[j]] = [_copyPayWindow[j], _copyPayWindow[i]]
+  }
+
+  // Shuffle row elements
+  _copyPayWindow.forEach((row, rowIndex) => {
+    for (let i = row.length - 1; i > 0; i--) {
+      const randNoBetween0and1 = generateRandomDecimal({
+        clientSeed: `${clientSeed}-generate-random-number-for-row-elements-shuffling-${rowIndex}-${i}`,
+        serverSeed,
+        maxNumber: 1
+      })
+      const j = Math.floor(randNoBetween0and1 * (i + 1))
+      ;[row[i], row[j]] = [row[j], row[i]]
+    }
+  })
+
+  return _copyPayWindow
+}

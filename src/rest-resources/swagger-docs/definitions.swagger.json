@@ -1,0 +1,553 @@
+{
+  "PreloadResponse": {
+    "type": "object",
+    "properties": {
+      "data": {
+        "type": "array",
+        "example": null
+      },
+      "errors": {
+        "type": "array",
+        "example": []
+      },
+      "Player": {
+        "type": "object",
+        "example": {
+          "Balance": 1001.4,
+          "Rate": 1,
+          "Currency": "USD",
+          "CoinRate": 100
+        }
+      },
+      "Current": {
+        "type": "object",
+        "example": {
+          "Type": 30,
+          "TotalWin": 1.6,
+          "AccWin": 1.6,
+          "Result": {
+            "R": "105,202,201,202,104|201,105,201,203,204|201,202,1002,203,203|104,102,1004,101,101|104,103,103,1006,104|105,102,102,101,1004",
+            "C": 1
+          },
+          "Multiplier": 1,
+          "Round": {
+            "RoundType": 1,
+            "Bet": 0.2,
+            "ActualBet": 0.2,
+            "BetValue": 1,
+            "Line": 20,
+            "LineBet": 0.01,
+            "Items": [
+              "1|0.5|1",
+              "30|0|1"
+            ],
+            "Mode": 1
+          }
+        }
+      },
+      "Next": {
+        "type": "object",
+        "example": {
+          "Type": 1
+        }
+      },
+      "GameInfo": {
+        "type": "object",
+        "example": {
+          "Line": 20,
+          "BetValue": [],
+          "LineBet": [
+            0.01,
+            0.02,
+            0.03,
+            0.04,
+            0.05,
+            0.06,
+            0.07,
+            0.08,
+            0.09,
+            0.1,
+            0.12,
+            0.14,
+            0.16,
+            0.18,
+            0.2,
+            0.22,
+            0.24,
+            0.26,
+            0.28,
+            0.3,
+            0.35,
+            0.4,
+            0.45,
+            0.5,
+            0.6,
+            0.7,
+            0.8,
+            0.9,
+            1,
+            1.5,
+            2,
+            2.5,
+            3,
+            4,
+            5,
+            7.5,
+            10
+          ]
+        }
+      },
+      "Status": {
+        "type": "number",
+        "example": 200
+      },
+      "Ts": {
+        "type": "number",
+        "example": 1715784450348
+      }
+    }
+  },
+  "TransactResponse": {
+    "type": "object",
+    "properties": {
+      "data": {
+        "type": "array",
+        "example": null
+      },
+      "errors": {
+        "type": "array",
+        "example": []
+      },
+      "Player": {
+        "type": "object",
+        "example": {
+          "Rate": 1,
+          "Currency": "GC",
+          "CoinRate": 100,
+          "Balance": 998.9
+        }
+      },
+      "Current": {
+        "type": "object",
+        "example": {
+          "Type": 1,
+          "TotalWin": 0,
+          "AccWin": 0,
+          "Result": {
+            "R": "201,202,104,1004,103|203,204,102,1002,104|1002,203,203,203,204|102,102,103,103,104|1003,104,102,101,203|102,102,1002,103,103",
+            "C": 1
+          },
+          "Multiplier": 13,
+          "Round": {
+            "RoundType": 1,
+            "Bet": 0.2,
+            "ActualBet": 0.2,
+            "BetValue": 1,
+            "Line": 20,
+            "LineBet": 0.01,
+            "Payout": 0,
+            "Items": [
+              "1|0|1"
+            ],
+            "Mode": 1
+          }
+        }
+      },
+      "Next": {
+        "type": "object",
+        "example": {
+          "Type": 1
+        }
+      },
+      "Status": {
+        "type": "number",
+        "example": 200
+      },
+      "Ts": {
+        "type": "number",
+        "example": 1715784450348
+      },
+      "nextServerSeedHash": {
+        "type": "string",
+        "example": "860ea25eacd67a976999fca52cb7accc9af07ab80ebcc958dd66bc367291ddc2"
+      }
+    }
+  },
+  "PreloadResponseEngine2": {
+    "type": "object",
+    "properties": {
+      "data": {
+        "type": "array",
+        "example": null
+      },
+      "errors": {
+        "type": "array",
+        "example": []
+      },
+      "Player": {
+        "type": "object",
+        "example":  {
+          "Balance": 100000,
+          "Rate": 1,
+          "Currency": "EUR",
+          "CoinRate": 100
+        }
+      },
+      "Current": {
+        "type": "object",
+        "example": {
+          "Type": 1,
+          "TotalWin": 0.0500,
+          "M": 1,
+          "AccWin": 0.05,
+          "Result": {
+            "R": "104,102,102|104,102,104|203,104,203|201,104,103|102,102,102",
+            "WR": [
+              {
+                "T": 1,
+                "AWP": [
+                  [
+                    0
+                  ],
+                  [
+                    0
+                  ],
+                  [
+                    1
+                  ],
+                  [],
+                  []
+                ],
+                "R": "0.05,8,3,1,104,1"
+              }
+            ]
+          },
+          "Round": {
+            "RoundType": 1,
+            "Bet": 0.10,
+            "ActualBet": 0.1000,
+            "BetValue": 1,
+            "Line": 10,
+            "LineBet": 0.01,
+            "Payout": 0.0500,
+            "Items": [
+              "1|0.05|1"
+            ],
+            "Mode": 1
+          },
+          "RId": 596415,
+          "ReId": 1125076
+        }
+      },
+      "Next": {
+        "type": "object",
+        "example": {
+          "Type": 1
+        }
+      },
+      "GameInfo": {
+        "type": "object",
+        "example": {
+          "Line": 20,
+          "BetValue": [],
+          "LineBet": [
+            0.01,
+            0.02,
+            0.03,
+            0.04,
+            0.05,
+            0.06,
+            0.07,
+            0.08,
+            0.09,
+            0.1,
+            0.12,
+            0.14,
+            0.16,
+            0.18,
+            0.2,
+            0.22,
+            0.24,
+            0.26,
+            0.28,
+            0.3,
+            0.35,
+            0.4,
+            0.45,
+            0.5,
+            0.6,
+            0.7,
+            0.8,
+            0.9,
+            1,
+            1.5,
+            2,
+            2.5,
+            3,
+            4,
+            5,
+            7.5,
+            10
+          ]
+        }
+      },
+      "Status": {
+        "type": "number",
+        "example": 200
+      },
+      "Ts": {
+        "type": "number",
+        "example": 1715784450348
+      }
+    }
+  },
+  "TransactResponseEngine2": {
+    "type": "object",
+    "properties": {
+      "data": {
+        "type": "array",
+        "example": {
+          "Player": {
+            "type": "object",
+            "example": {
+              "Balance": 100000,
+              "Rate": 1,
+              "Currency": "EUR",
+              "CoinRate": 100
+            }
+          },
+          "Current": {
+            "type": "object",
+            "example": {
+              "Type": 1,
+              "TotalWin": 0.0500,
+              "M": 1,
+              "AccWin": 0.05,
+              "Result": {
+                "R": "104,102,102|104,102,104|203,104,203|201,104,103|102,102,102",
+                "WR": [
+                  {
+                    "T": 1,
+                    "AWP": [
+                      [
+                        0
+                      ],
+                      [
+                        0
+                      ],
+                      [
+                        1
+                      ],
+                      [],
+                      []
+                    ],
+                    "R": "0.05,8,3,1,104,1"
+                  }
+                ]
+              },
+              "Round": {
+                "RoundType": 1,
+                "Bet": 0.10,
+                "ActualBet": 0.1000,
+                "BetValue": 1,
+                "Line": 10,
+                "LineBet": 0.01,
+                "Payout": 0.0500,
+                "Items": [
+                  "1|0.05|1"
+                ],
+                "Mode": 1
+              },
+              "RId": 596415,
+              "ReId": 1125076
+            }
+          },
+          "Next": {
+            "type": "object",
+            "example": {
+              "Type": 1
+            }
+          },
+          "Status": {
+            "type": "number",
+            "example": 200
+          },
+          "Ts": {
+            "type": "number",
+            "example": 1715784450348
+          },
+          "nextServerSeedHash": {
+            "type": "string",
+            "example": "860ea25eacd67a976999fca52cb7accc9af07ab80ebcc958dd66bc367291ddc2"
+          }
+        }
+      },
+      "errors": {
+        "type": "array",
+        "example": []
+      }
+    }
+  },
+  "PreloadResponseEngine11": {
+    "type": "object",
+    "properties": {
+      "data": {
+        "type": "array",
+        "example": null
+      },
+      "errors": {
+        "type": "array",
+        "example": []
+      },
+      "Player": {
+        "type": "object",
+        "example":  {
+          "Balance": 100000,
+          "Rate": 1,
+          "Currency": "EUR",
+          "CoinRate": 100
+        }
+      },
+      "Next": {
+        "type": "object",
+        "example": {
+          "Type": 1
+        }
+      },
+      "GameInfo": {
+        "type": "object",
+        "example": {
+          "Line": 20,
+          "BetValue": [],
+          "LineBet": [
+            0.01,
+            0.02,
+            0.03,
+            0.04,
+            0.05,
+            0.06,
+            0.07,
+            0.08,
+            0.09,
+            0.1,
+            0.12,
+            0.14,
+            0.16,
+            0.18,
+            0.2,
+            0.22,
+            0.24,
+            0.26,
+            0.28,
+            0.3,
+            0.35,
+            0.4,
+            0.45,
+            0.5,
+            0.6,
+            0.7,
+            0.8,
+            0.9,
+            1,
+            1.5,
+            2,
+            2.5,
+            3,
+            4,
+            5,
+            7.5,
+            10
+          ]
+        }
+      },
+      "Status": {
+        "type": "number",
+        "example": 200
+      },
+      "Ts": {
+        "type": "number",
+        "example": 1715784450348
+      }
+    }
+  },
+  "TransactResponseEngine11": {
+    "type": "object",
+    "properties": {
+      "data": {
+        "type": "array",
+        "example": {
+          "Player": {
+            "type": "object",
+            "example": {
+              "Balance": 100000,
+              "Rate": 1,
+              "Currency": "EUR",
+              "CoinRate": 100
+            }
+          },
+          "Current": {
+            "type": "object",
+            "example": {
+              "Type": 1,
+              "TotalWin": 0.06,
+              "AccWin": 0.06,
+              "Result": {
+                "R": "105,203,204,202|105,101,203,103|105,102,102,105|102,105,105,202|101,104,105,201",
+                "WR": [
+                  {
+                    "T": 6,
+                    "AWP": [
+                      [0],
+                      [0],
+                      [1, 4],
+                      [1, 2],
+                      [2]
+                    ],
+                    "R": "0.06"
+                  }
+                ],
+                "C": 1
+              },
+              "Multiplier": 1,
+              "Round": {
+                "RoundType": 1,
+                "Bet": 0.2,
+                "ActualBet": 0.2,
+                "BetValue": 1,
+                "Line": 20,
+                "LineBet": 0.01,
+                "Payout": 0.06,
+                "Items": [
+                  "1|0.3|1|1"
+                ],
+                "Mode": 1
+              }
+            }
+          },
+          "Next": {
+            "type": "object",
+            "example": {
+              "Type": 1
+            }
+          },
+          "Status": {
+            "type": "number",
+            "example": 200
+          },
+          "Ts": {
+            "type": "number",
+            "example": 1715784450348
+          },
+          "nextServerSeedHash": {
+            "type": "string",
+            "example": "860ea25eacd67a976999fca52cb7accc9af07ab80ebcc958dd66bc367291ddc2"
+          }
+        }
+      },
+      "errors": {
+        "type": "array",
+        "example": []
+      }
+    }
+  }
+}

@@ -1,0 +1,283 @@
+{
+
+      "/game/slot/engine-one/preload": {
+        "post": {
+          "tags": ["Slot Game"],
+          "description": "Slot login api",
+          "security": [
+            {
+              "Bearer": []
+            }
+          ],
+          "responses": {
+            "200": {
+              "description": "Success response",
+              "schema": {
+                "$ref": "#/definitions/PreloadResponse"
+              }
+            }
+          }
+        }
+      },
+      "/game/slot/engine-one/transact": {
+        "post": {
+          "tags": ["Slot Game"],
+          "description": "Slot reel spin api",
+          "security": [
+            {
+              "Bearer": []
+            }
+          ],
+          "parameters": [
+            {
+              "name": "obj",
+              "in": "body",
+              "description": "Slot game transact request body",
+              "required": true,
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "Type": {
+                    "type": "number",
+                    "example": "1"
+                  },
+                  "BetValue": {
+                    "type": "number",
+                    "example": "1"
+                  },
+                  "Line": {
+                    "type": "number",
+                    "example": "20"
+                  },
+                  "LineBet": {
+                    "type": "string",
+                    "example": "0.06"
+                  },
+                  "RoundType": {
+                    "type": "number",
+                    "example": "1"
+                  },
+                  "Index": {
+                    "type": "number",
+                    "example": "0"
+                  },
+                  "Mode": {
+                    "type": "number",
+                    "example": "1"
+                  }
+                },
+                "required": [
+                  "Type",
+                  "BetValue",
+                  "Line",
+                  "LineBet",
+                  "RoundType",
+                  "Index",
+                  "Mode"
+                ]
+              }
+            }
+          ],
+          "responses": {
+            "200": {
+              "description": "Success response",
+              "schema": {
+                "$ref": "#/definitions/TransactResponse"
+              }
+            }
+          }
+        }
+      },
+      "/game/slot/engine-two/preload": {
+        "post": {
+          "tags": ["Slot Game"],
+          "description": "Slot login api",
+          "security": [
+            {
+              "Bearer": []
+            }
+          ],
+          "responses": {
+            "200": {
+              "description": "Success response",
+              "schema": {
+                "$ref": "#/definitions/PreloadResponseEngine2"
+              }
+            }
+          }
+        }
+      },
+      "/game/slot/engine-two/transact": {
+        "post": {
+          "tags": ["Slot Game"],
+          "description": "Slot reel spin api",
+          "security": [
+            {
+              "Bearer": []
+            }
+          ],
+          "parameters": [
+            {
+              "name": "obj",
+              "in": "body",
+              "description": "Slot game transact request body",
+              "required": true,
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "Type": {
+                    "type": "number",
+                    "example": "1"
+                  },
+                  "BetValue": {
+                    "type": "number",
+                    "example": "1"
+                  },
+                  "Line": {
+                    "type": "number",
+                    "example": "20"
+                  },
+                  "LineBet": {
+                    "type": "string",
+                    "example": "0.06"
+                  },
+                  "RoundType": {
+                    "type": "number",
+                    "example": "1"
+                  },
+                  "Index": {
+                    "type": "number",
+                    "example": "0"
+                  },
+                  "Mode": {
+                    "type": "number",
+                    "example": "1"
+                  }
+                },
+                "required": [
+                  "Type",
+                  "BetValue",
+                  "Line",
+                  "LineBet",
+                  "RoundType",
+                  "Index",
+                  "Mode"
+                ]
+              }
+            }
+          ],
+          "responses": {
+            "200": {
+              "description": "Success response",
+              "schema": {
+                "$ref": "#/definitions/TransactResponseEngine2"
+              }
+            }
+          }
+        }
+      },
+      "/game/slot/engine-eleven/preload": {
+        "post": {
+          "tags": ["Slot Game"],
+          "description": "Slot login api",
+          "security": [
+            {
+              "Bearer": []
+            }
+          ],
+          "responses": {
+            "200": {
+              "description": "Success response",
+              "schema": {
+                "$ref": "#/definitions/PreloadResponseEngine11"
+              }
+            }
+          }
+        }
+      },
+      "/game/slot/engine-eleven/transact": {
+        "post": {
+          "tags": ["Slot Game"],
+          "description": "Slot reel spin api",
+          "security": [
+            {
+              "Bearer": []
+            }
+          ],
+          "parameters": [
+            {
+              "name": "obj",
+              "in": "body",
+              "description": "Slot game transact request body",
+              "required": true,
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "Type": {
+                    "type": "number",
+                    "example": "1"
+                  },
+                  "BetValue": {
+                    "type": "number",
+                    "example": "1"
+                  },
+                  "Line": {
+                    "type": "number",
+                    "example": "20"
+                  },
+                  "LineBet": {
+                    "type": "string",
+                    "example": "0.06"
+                  },
+                  "RoundType": {
+                    "type": "number",
+                    "example": "1"
+                  },
+                  "Index": {
+                    "type": "number",
+                    "example": "0"
+                  },
+                  "Mode": {
+                    "type": "number",
+                    "example": "1"
+                  }
+                },
+                "required": [
+                  "Type",
+                  "BetValue",
+                  "Line",
+                  "LineBet",
+                  "RoundType",
+                  "Index",
+                  "Mode"
+                ]
+              }
+            }
+          ],
+          "responses": {
+            "200": {
+              "description": "Success response",
+              "schema": {
+                "$ref": "#/definitions/TransactResponseEngine11"
+              }
+            }
+          }
+        }
+      },
+      "/game/slot/engine-one/keep-alive": {
+        "post": {
+          "tags": ["Slot Game"],
+          "description": "Slot keep alive api",
+          "security": [
+            {
+              "Bearer": []
+            }
+          ],
+          "responses": {
+            "200": {
+              "description": "OK"
+            }
+          }
+        }
+      }
+}

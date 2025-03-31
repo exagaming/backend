@@ -1,0 +1,73 @@
+{
+    "/user/user-detail": {
+        "get": {
+            "tags": [
+                "User APIs"
+            ],
+            "description": "Fetch user details",
+            "security": [
+                {
+                    "Bearer": []
+                }
+            ],
+            "responses": {
+                "default": {
+                    "description": ""
+                }
+            }
+        }
+    },
+    "/user/login": {
+        "post": {
+            "tags": [
+                "User APIs"
+            ],
+            "description": "User Login Api",
+            "security": [
+                {
+                    "Bearer": []
+                }
+            ],
+            "parameters": [
+                {
+                    "name": "obj",
+                    "in": "body",
+                    "description": "User login request body",
+                    "required": true,
+                    "schema": {
+                        "type": "object",
+                        "properties": {
+                            "currencyCode": {
+                                "type": "string",
+                                "example": "EUR"
+                            },
+                            "operatorId": {
+                                "type": "string",
+                                "example": "2"
+                            },
+                            "operatorUserToken": {
+                                "type": "string",
+                                "example": "89c7879be3ea82819f01728e1b5626038e47564143845dc0a93ae8f5eb44368f"
+                            },
+                            "gameId": {
+                              "type": "string",
+                              "example": "6"
+                            }
+                        },
+                        "required": [
+                            "currencyCode",
+                            "operatorId",
+                            "operatorUserToken",
+                            "gameId"
+                        ]
+                    }
+                }
+            ],
+            "responses": {
+                "default": {
+                    "description": ""
+                }
+            }
+        }
+    }
+}

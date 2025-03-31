@@ -1,0 +1,53 @@
+{
+  "workbench.statusBar.visible": true,
+  "workbench.sideBar.location": "left",
+  "files.autoSave": "onFocusChange",
+  "files.trimTrailingWhitespace": true,
+  "files.insertFinalNewline": true,
+  "files.trimFinalNewlines": true,
+  "editor.tabSize": 2,
+  "editor.renderWhitespace": "all",
+  "standard.enable": true,
+  "editor.minimap.enabled": false,
+  "editor.renderControlCharacters": false,
+  "editor.renderFinalNewline": "on",
+  "editor.rulers": [
+    120
+  ],
+  "editor.multiCursorModifier": "alt",
+  "editor.autoIndent": "full",
+  "editor.detectIndentation": false,
+  "editor.formatOnSave": false,
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "javascript.format.insertSpaceBeforeFunctionParenthesis": true,
+  "javascript.format.insertSpaceAfterConstructor": true,
+  "breadcrumbs.enabled": true,
+  "cSpell.words": [
+    "actionee",
+    "aztecman",
+    "Cashout",
+    "FOLLOWTHEARROW",
+    "HAPPYBIRDS",
+    "intialized",
+    "LOPEN",
+    "MULT",
+    "payline",
+    "paywindow",
+    "pkey",
+    "Plinko",
+    "POWEROFTHOR",
+    "prefinish",
+    "RANDSYM",
+    "resave",
+    "roulettte",
+    "SPACEWARS",
+    "SUBCEED",
+    "UUIDV"
+  ],
+  "editor.codeActionsOnSave": {
+    "source.fixAll": "explicit"
+  },
+  "eslint.validate": [
+    "javascript"
+  ]
+}
